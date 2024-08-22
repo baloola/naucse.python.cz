@@ -1,15 +1,16 @@
-title: Python installation
+title: Python (installation) تثبيت
 style: md
 attribution:
-- Edited by Tyna Dolezalova
+- Edited by Mussab Abdalla
+- Edited by Tyna Dolezalova for [PyLadies Vienna].
 - |
     Originally written by Petr Viktorin, 2014-2017 for [PyLadies CZ].
     [PyLadies CZ]: https://naucse.python.cz/course/pyladies/beginners/install
 license: cc-by-sa-40
 subpages:
     linux:
-        title: Python installation - Linux
+        title: Python (installation) تثبيت - (Linux) لينيكس
     windows:
-        title: Python installation - Windows
+        title: Python (installation) تثبيت - (Windows) ويندوز
     macos:
-        title: Python installation - macOS
+        title: Python (installation) تثبيت - (macOS) ماكنتوش

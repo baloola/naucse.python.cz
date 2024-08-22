@@ -1,20 +1,19 @@
-# Python installation
+# Python (installation) تثبيت
 
-We will do two things in this section:
+سنقوم بعمل شيئين في هذا القسم:
 
-* We will install Python
-* We will give Python a test run.
+سنقوم بتثبيت بايثون *
+سنقوم بتجربة بايثون *
 
-You might ask why we need all this.
+ربما تسأل لماذا نحتاج كل هذا؟
 
-Python is programming language (a way how to tell computers what to do), 
-and also a program we need so we can talk to our computer in Python language.
+بايثون هي لغة برمجة (طريقة لإخبار الحاسوب بما يجب فعله)، وهي أيضًا برنامج نحتاجه للتحدث مع الحاسوب بلغة بايثون.
 
-Choose a page depending on your operating system:
+اختر صفحة حسب نظام التشغيل الخاص بك:
 
 * [Linux]({{ subpage_url('linux') }})
 * [Windows]({{ subpage_url('windows') }})
 * [macOS]({{ subpage_url('macos') }})
 
+إذا كان لديك نظام آخر أو إذا واجهتك أي مشكلة، أرسل لنا إيميل.
 
-If you have another system or if you have any problem send us an e-mail.
