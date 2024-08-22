@@ -1,57 +1,55 @@
-title: Beginners course PyLadies Vienna
-subtitle: Online - spring 2024 - Tuesdays
+title: دورة اساسيات البرمجة - فيننا
+subtitle: كل يوم احد - 2024 - بيت السودان
 place: |
-  Online
+  بيت السودان
 timezone: Europe/Vienna
 default_time:
-  start: '18:00'
-  end: '20:00'
+  start: "14:00"
+  end: "16:00"
 description: |
-    Learn Python from the beginning. No previous knowledge required!
+  تعلم اساسيات البرمجة من البداية. لست بحاجة الى اي مؤهلات سابقة!
 long_description: |
-    <br>
-    Here you can find all materials for the PyLadies Vienna Beginners Python Course.
-    All lectures are for complete beginners. Instructions are for Linux, Windows and macOS.
-    <br>
-    If you have any questions, feel free to contact us on pyladies.vienna@gmail.com
+  <br>
+  هنا يمكنك العثور على جميع المواد الخاصة بدورة بايثون للمبتدئين من بيت السودان فيينا. جميع المحاضرات موجهة للمبتدئين تمامًا. التعليمات مخصصة لنظام التشغيل لينكس وويندوز وماك.
+  <br>
+  للاستفسار الرجاء التواصل مع الفريق المنظم
 derives: pyladies-en
 vars:
-  user-gender: f
-  pyladies: true
+  user-gender: m
+  pyladies: false
   coach-present: true
 mentors:
   - name: علي العبيد
     img: img/team/mussab.jpg
     role: "منظم, مدرب"
     links:
-  - mail: mailto:ali.a.obeid@outlook.com
-  - linkedin: https://www.linkedin.com/in/ali-obeid-393b801a9/
+      - mail: mailto:ali.a.obeid@outlook.com
+      - linkedin: https://www.linkedin.com/in/ali-obeid-393b801a9/
   - name: ابوبكر عثمان
     img: img/team/abubakr.jpeg
     role: "منظم, مدرب"
     links:
-    - mail: mailto:abobakrosman01@outlook.com
+      - mail: mailto:abobakrosman01@outlook.com
 
   - name: مصعب ابوالحسن
     img: img/team/mussab.jpg
     role: "منظم, مدرب"
     links:
-    - mail: mailto:baloola-mu@hotmail.com
+      - mail: mailto:baloola-mu@hotmail.com
 
 plan:
-- title: Installations تثبيت البرامج
-  slug: install_home
-  serial: 0
-  materials:
-  - lesson: beginners-en/install_vienna
-  - lesson: beginners-en/install-editor
-  - title: VS Code keybindings cheat sheet Windows
-    url: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
-    type: cheatsheet
-  - title: VS Code keybindings cheat sheet Mac OS
-    url: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
-    type: cheatsheet
-
+  - title: Installations تثبيت البرامج
+    slug: install_home
+    date: 2024-10-19
+    materials:
+      - lesson: beginners-en/install_vienna
+      - lesson: beginners-en/install-editor
+      - title: VS Code ملخص اختصار المفاتيح لنظام ويندوز
+        url: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+        type: cheatsheet
+      - title: VS Code ملخص اختصار المفاتيح لنظام ماك
+        url: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
+        type: cheatsheet
 # - title: Introduction, installation check
 #   slug: install
 #   date: 2024-03-19

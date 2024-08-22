@@ -1,0 +1,39 @@
+title: اساسيات برنامج Office - فيينا
+subtitle: 2024 - بيت السودان
+place: |
+  بيت السودان
+timezone: Europe/Vienna
+default_time:
+  start: "14:00"
+  end: "16:00"
+description: |
+  Office تعلم اساسيات برنامج
+long_description: |
+  <br>
+  مقدمة لمبادئ والأدوات المستخدمة في حقيبة الأوفيس الإدارية، سنتناول  أهم التعريفات في الإكسيل والوورد وكذلك الباور بونيت والأوتلوك، كما سنقوم بشرح لأساسيات الستخدام  الإكسيل، وكذلك طريقة استخدام الشرائح التقديمية في الباور بوينت، وآلية كتابة المستندات، واستخدام البريد الإلكتروني كذلك.
+  <br>
+  للاستفسار الرجاء التواصل مع الفريق المنظم
+derives: pyladies-en
+vars:
+  user-gender: m
+  pyladies: false
+  coach-present: true
+mentors:
+  - name: علي العبيد
+    img: img/team/mussab.jpg
+    role: "منظم, مدرب"
+    links:
+      - mail: mailto:ali.a.obeid@outlook.com
+      - linkedin: https://www.linkedin.com/in/ali-obeid-393b801a9/
+  - name: ابوبكر عثمان
+    img: img/team/abubakr.jpeg
+    role: "منظم, مدرب"
+    links:
+      - mail: mailto:abobakrosman01@outlook.com
+
+plan:
+  - title: اساسيات برنامج Office
+    slug: office-workshop
+    date: 2024-09-15
+    materials:
+      - lesson: beginners-en/office-workshop
