@@ -1,0 +1,125 @@
+
+<!doctype html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>
+
+                Git installation - Windows
+
+        </title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+        
+        <link rel="icon" type="image/x-icon" href= "/static/img/who_96px.png">
+        <link rel="stylesheet" href="/static/css/naucse.css">
+        <link rel="stylesheet" href="/static/css/body.css">
+        <link rel="stylesheet" href="/static/css/pygments-lovelace-style.css">
+        <link rel="stylesheet" href="/static/css/ipython.css">
+
+        
+    
+
+
+        <style>
+            
+    
+
+        </style>
+    </head>
+
+    <body>
+        <nav class="header">
+            <ul class="container menu">
+                <li><a href="/" class="logo"><h1>بيت السودان فيينا</h1></a></li>
+
+                <li><a href="/runs/" class="menu-link"><h2>الدورات</h2></a></li>
+            </ul>
+        </nav>
+
+        
+
+<div class="page">
+    <div class="container">
+
+        
+  
+
+
+        <div class="lesson-content">
+          
+    
+
+    <h2>Windows installation of git</h2>
+<p>Go to <a href="https://git-scm.com/download/win">git-scm.org</a>, download <strong>Git Standalone Installer 64-bit Git for Windows Setup</strong> and install it.
+When installing, go through the wizard and select these options:</p>
+<ul>
+<li>Run Git from the Windows Command Prompt</li>
+<li>Checkout Windows-style, commit Unix-style line endings</li>
+</ul>
+<p>Do not change any other options, they can be left as default.
+Please ensure that <strong>Git Credential Manager Core</strong> option is <a href="https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/install.md#git-for-windows-star">"checked"</a>, to install the extra tool by default with Git installation.</p>
+<p><span class="figure"><a href="/lessons/git-en/install/static/windows-git-cred-manager.png"><img src="/lessons/git-en/install/static/windows-git-cred-manager.png" alt="Git installation credential manager allow"></a></span></p>
+<p>Then set your Git editor.
+If you have a terminal window open, close it, and open a new one.
+(The installation changes system settings which have to be loaded again.)</p>
+<p>In the new command line, enter:</p>
+<div class="highlight"><pre><span></span><span class="go">&gt; git config --global core.editor notepad</span>
+<span class="go">&gt; git config --global format.commitMessageColumns 80</span>
+<span class="go">&gt; git config --global gui.encoding utf-8</span>
+</pre></div><p>Now continue with the rest of setup at <a href="/lessons/git-en/install/">General Settings in Git install</a>.</p>
+
+
+        </div>
+
+        
+
+    </div>
+</div>
+
+
+
+        <script type="text/javascript" src="/static/js/solutions.js"></script>
+
+        <div class="footer container">
+            <hr>
+            <div class="lesson-attribution">
+                
+    
+        <p>Translated by Marketa Muzikova</p>
+    
+        <p>Originally written by Petr Viktorin, 2014-2017 for <a href="https://naucse.python.cz/course/pyladies/git/install/">PyLadies CZ</a>.</p>
+    
+
+                
+    <p>
+        Licence:
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+            Creative Commons Attribution-ShareAlike 4.0 International
+        </a>
+    </p>
+    
+
+                
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="global-pyladies">
+                  <br>
+                  <br>
+                </div>
+            </div>
+            <div class="clear"></div>
+          </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+        
+
+    </body>
+</html>

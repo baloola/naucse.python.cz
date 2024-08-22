@@ -1,0 +1,105 @@
+nav.header {
+    background-color: #ee274d;
+}
+nav.header * {
+    color: rgba(255,255,255);
+}
+
+.motivation {
+    text-shadow: black 0 0 1px, black 0 0 2px, black 0 0 10px;
+    color: white;
+    padding: 8em 1em;
+    margin-bottom: 3rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.motivation h1 {
+    font-family: "Bree Serif", serif;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.motivation .lead {
+    font-weight: bold;
+    color: rgba(255,255,255,.85);
+}
+
+.calls-to-action {
+    margin-bottom: 8rem;
+}
+.calls-to-action .row {
+    margin-bottom: 3rem;
+}
+.call-to-action {
+    text-align: center;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:focus {
+    background-color: #ee274d;
+    outline-color: white;
+    border-color: #296e62;
+    color: white;
+}
+.btn-primary:active, .btn-primary:focus {
+    outline-color: #ee274d;
+}
+.btn-primary:hover {
+    background-color: #296e62;
+    outline-color: #ee274d;
+}
+
+.carousel-control-prev,.carousel-control-next {
+    opacity: 1;
+    transition: none;
+}
+
+.carousel-prev-icon,
+.carousel-next-icon {
+  height: 50px;
+  width: 50px;
+}
+
+.carousel-next-icon:after
+{
+  content: '>';
+  font-size: 40px;
+  color: #ee274d;
+}
+
+.carousel-prev-icon:after {
+  content: '<';
+  font-size: 40px;
+  color: #ee274d;
+}
+
+.carousel-indicators li {
+  background-color: #ee274d;
+}
+.carousel-indicators {
+  bottom: -40px;
+}
+@media (max-width: 600px){
+    .carousel-inner {
+        min-height: 300px;
+    }
+}
+@media (min-width: 601px){
+    .carousel-inner {
+        min-height: 200px;
+    }
+}
+.discord-join {
+    background-color: #ee274d;
+    outline-color: white;
+    border-color: #ee274d;
+    color: white;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.row {
+    margin-bottom: 16px;
+}
+
+.content-section {
+    margin-top: 20px;
+}
