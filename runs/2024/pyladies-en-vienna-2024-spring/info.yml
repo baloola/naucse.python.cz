@@ -19,8 +19,8 @@ vars:
   pyladies: false
   coach-present: true
 mentors:
-  - name: علي العبيد
-    img: img/team/mussab.jpg
+  - name: علي أحمد
+    img: img/team/ali.png
     role: "منظم, مدرب"
     links:
       - mail: mailto:ali.a.obeid@outlook.com

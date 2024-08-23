@@ -1,4 +1,4 @@
-title: اساسيات برنامج Office - فيينا
+title:  فيننا - Office اساسيات برنامج
 subtitle: 2024 - بيت السودان
 place: |
   بيت السودان
@@ -19,7 +19,7 @@ vars:
   pyladies: false
   coach-present: true
 mentors:
-  - name: علي العبيد
+  - name: علي أحمد
     img: img/team/mussab.jpg
     role: "منظم, مدرب"
     links:
