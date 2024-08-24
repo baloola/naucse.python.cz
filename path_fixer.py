@@ -21,7 +21,7 @@ def extract_hrefs_and_srcs(folder_path):
         with open(file_path, 'r') as f:
           content = f.read()
 
-        new_content = re.sub(r'(href|src)="(/)', r'\1="https://baloola.github.io/sudan-house/', content)
+        new_content = re.sub(r'(href|src)(="|= ")(/)', r'\1="https://baloola.github.io/sudan-house/', content)
         final_content = re.sub(r'url\(\/static', 'url(https://baloola.github.io/sudan-house/static', new_content)
 
         with open(file_path, 'w') as f:
