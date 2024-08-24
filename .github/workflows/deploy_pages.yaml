@@ -39,10 +39,19 @@ jobs:
         fi
         echo "sudan-house-training.at" > naucse_build/CNAME
 
-    - name: Deploy github pages
-      uses: JamesIves/github-pages-deploy-action@v4
+    - name: Fix hrefs paths
+      run: |
+        python path_fixer.py
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
       with:
-        folder: naucse_build
+        # Upload entire repository
+        path: './naucse_build/'
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
 
     - name: Cleanup
       if: always()
