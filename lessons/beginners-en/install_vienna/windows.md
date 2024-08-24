@@ -1,6 +1,6 @@
 # تثبيت بايثون لنظام التشغيل ويندوز
 
-توجه إلى [موقع بايثون](https://www.python.org/downloads/) وقم بتنزيل "أحدث إصدار مستقر من بايثون"( `latest stable version of Python`). في وقت كتابة هذه المواد، فهو `بايثون 3.12.5`.
+توجه إلى [موقع بايثون](https://www.python.org/downloads/) وقم بتنزيل "أحدث إصدار  من بايثون"( `latest stable version of Python`). في وقت كتابة هذه المواد، فهو `بايثون 3.12.5`.
 
 كيف تعرف مُثبِّت النظام(installer) الصحيح لك؟
 
@@ -16,17 +16,17 @@
     alt='Windows version',
 ) }}
 
-بعد ذلك يمكنك تشغيل المُثبِّت.
+بعد ذلك يمكنك تشغيل  المُثبِّت (installer) .
 
 
 > [تحذير]  في البداية، تأكد من تحديد**Install launcher for all Users** وأيضًا مهم جدًا: **Add Python 3.12 to PATH**.
 
 
-(إذا لم يكن لديك حقوق المسؤول، فلا تحدد *Install launcher for all Users*.)
+(إذا لم تكن Admin، فلا تحدد *Install launcher for all Users*.)
 
 {{ figure(
     img=static('windows_add_python_to_path.png'),
-    alt='python installation,
+    alt='python installation',
 > ) }}
 
 ثم انقر فوق **Install now** واتبع التعليمات.
