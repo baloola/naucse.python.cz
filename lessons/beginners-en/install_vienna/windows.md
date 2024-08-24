@@ -27,7 +27,7 @@
 {{ figure(
     img=static('windows_add_python_to_path.png'),
     alt='python installation',
-> ) }}
+ ) }}
 
 ثم انقر فوق **Install now** واتبع التعليمات.
 
