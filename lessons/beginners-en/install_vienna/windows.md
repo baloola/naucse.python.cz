@@ -1,34 +1,33 @@
-# Python installation for Windows 
+# تثبيت بايثون لنظام التشغيل ويندوز
 
-Go to [the Python website](https://www.python.org/downloads/) and
-download the `latest stable version of Python`. At the moment of writing
-the materials it is `Python 3.12.3`.
+توجه إلى [موقع بايثون](https://www.python.org/downloads/) وقم بتنزيل "أحدث إصدار مستقر من بايثون"( `latest stable version of Python`). في وقت كتابة هذه المواد، فهو `بايثون 3.12.5`.
 
-How to know which installer is the right one?
-If your computer has 64bit Windows then download *Windows installer (64-bit)*.
-If your Windows is only 32bit download *Windows installer (32-bit)*.
+كيف تعرف مُثبِّت النظام(installer) الصحيح لك؟
 
+إذا كان جهاز الكمبيوتر الخاص بك يعمل بنظام ويندوز 64 بت، فقم بتنزيل *Windows installer (64-bit)*.
+إذا كان نظام التشغيل ويندوز الخاص بك 32 بت فقط، فقم بتنزيل *Windows installer (32-bit)*.
 
-> [note]
-> If you don't know what Windows version do you have just open **Start**, 
-> search **System** and open **System information**.
+> [ملاحظة]
+>
+> إذا كنت لا تعرف إصدار ويندوز الذي لديك، فما عليك سوى فتح **ابدأ** (**Start**)، والبحث عن **النظام**(**System**) وفتح **معلومات النظام**(**System information**).
 >
 > {{ figure(
     img=static('windows_32v64-bit.png'),
     alt='Windows version',
 ) }}
 
-Then you can run the installer.
-> [warning]  In the beginning check **Install launcher for all Users** and also very important: **Add Python 3.12 to PATH**.
+بعد ذلك يمكنك تشغيل المُثبِّت.
 
 
-(If you don't have admin rights don't check *Install launcher for all Users*.)
+> [تحذير]  في البداية، تأكد من تحديد**Install launcher for all Users** وأيضًا مهم جدًا: **Add Python 3.12 to PATH**.
+
+
+(إذا لم يكن لديك حقوق المسؤول، فلا تحدد *Install launcher for all Users*.)
 
 {{ figure(
     img=static('windows_add_python_to_path.png'),
-    alt='Python installation',
-) }}
+    alt='python installation,
+> ) }}
 
-Then click **Install now** and follow the instructions.
+ثم انقر فوق **Install now** واتبع التعليمات.
 
-If you did have your command line open, close it and open again.
