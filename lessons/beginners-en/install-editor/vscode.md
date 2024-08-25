@@ -6,15 +6,17 @@
 
 {% block setup %}
 
-For beginners course, you should install `Python extension` for VS Code.
+# تثبيت إضافة بايثون (Python extension) لـ VSCode
 
-When you open the VS Code, on the left side bar, choose the `Extensions` (Ctrl + Shift + X) with icon of four cubes.
+بالنسبة لدورة المبتدئين، يجب عليك تثبيت `Python extension` لـ VSCode.
 
-Next, in the top search bar of Extensions, search for `Python` and in the list of extensions, which appears, select and install the first suggested package: `Python` - authored by Microsoft. You can install the package by clicking the small button `Install` placed in the bottom of the item in the list or after clicking the item in the newly opened panel and on top of the page, there should be a small button `install`.
+عند فتح VSCode، في الشريط الجانبي الأيسر، اختر `Extensions` (Ctrl + Shift + X) مع رمز المكعبات الأربعة.
+
+بعد ذلك، في شريط البحث العلوي لـ Extensions، ابحث عن "Python" وفي قائمة الإضافات التي تظهر، حدد وقم بتثبيت الحزمة الأولى المقترحة: `Python` - من تأليف Microsoft. يمكنك تثبيت الحزمة بالنقر فوق الزر الصغير "Install" الموجود في أسفل العنصر في القائمة أو بعد النقر على العنصر في اللوحة المفتوحة حديثًا وفي أعلى الصفحة، يجب أن يكون هناك زر صغير "install".
 
 
 > [note]
-> Automatic indentation and desired code colouring (for our purposes) works only when the file has a `.py` extension.
-> So it's better if you save your newly created file ending with `.py` as early as possible.
+> تعمل التحكم بالمسافات التلقائية(indentation) وتلوين الكود المطلوب (لأغراضنا) فقط عندما يكون الملف يحتوي على امتداد `.py`.
+> لذلك من الأفضل أن تحفظ الملف الذي تم إنشاؤه حديثًا بامتداد `.py` في أقرب وقت ممكن.
 
 {% endblock %}

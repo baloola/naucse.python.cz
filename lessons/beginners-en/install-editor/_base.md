@@ -1,15 +1,15 @@
-# Installation {% block name_gen %} editor {{ var('editor_name') }} {% endblock %}
+# Installation التثبيت {% block name_gen %} editor {{ var('editor_name') }} {% endblock %}
 
 
 {% block install %}
 
-Download {{ editor_name }}
-from its [webpage]({{ editor_url }})
-and install it.
+قم بتنزيل {{ editor_name }}
+من [webpage]({{ editor_url }})
+وقم بتثبيته.
 
 {% endblock %}
 
-## Settings
+## Settings الخطوات
 
 {% block setup %}
 
@@ -17,12 +17,12 @@ and install it.
 {% endblock %}
 
 
-## Indentation practice
+## تمرين **المسافة (indentation)**
 
-It's important in Python by how much spaces a line is indented.
-So we will have to learn to quickly indent block of text.
+من المهم في بايثون مقدار المسافات التي يتم فيها استطالة سطر ما.
+لذلك علينا أن نتعلم  سريعا كيفية التحكم بالمسافات لقطعة من النص.
 
-First of all copy following text into your editor.
+أولاً، انسخ النص التالي في **المحرر (editor)** الخاص بك.
 
 
 ```
@@ -50,7 +50,7 @@ There, my lord.
 <small>Hamlet, W. Shakespeare</small>
 
 
-This text is not well-arranged so we will indent it like that:
+هذا النص غير مرتب جيدًا، لذلك سنقوم ب ضبط فراغاته على النحو التالي:
 
 ```
 OPHELIA:
@@ -74,12 +74,10 @@ OPHELIA:
     There, my lord.
 ```
 
-To indent one line set you coursor in the beginning of the line
-and press <kbd>Tab</kbd>.
-With every press you will indent the like by 4 spaces.
+لتنظيم مسافات سطر واحد، ضع المؤشر في بداية السطر واضغط على <kbd>Tab</kbd>. مع كل ضغطة، ستزيد المسافات بمقدار أربعة فراغات.
 
-If you indent too much, press <kbd>Shift</kbd>+<kbd>Tab</kbd>.
+إذا قمت بزيادة المسافات أكثر من اللازم، اضغط على <kbd>Shift</kbd>+<kbd>Tab</kbd>.
 
-If you would want to indent more lines just highlight them and
-press <kbd>Tab</kbd>.
-For undo press <kbd>Shift</kbd>+<kbd>Tab</kbd>.
+إذا كنت تريد تنظيم مسافات عدة أسطر، فما عليك سوى تحديدها واضغط على <kbd>Tab</kbd>.
+
+ لإلغاء التغيير، اضغط على <kbd>Shift</kbd>+<kbd>Tab</kbd>.

@@ -1,26 +1,23 @@
-# Editor installation
+# تثبيت **المحرر (editor)**
 
-An editor is a program for editing plain text. It is an essential tool for 
-every programmer.
+**المحرر (editor)** هو برنامج لتحرير النص العادي. إنه أداة أساسية لكل مبرمج.
 
-It doesn't matter which editor you use, just don't use
-Notepad, TextEdit, Word, or Writer.
-If you already have some favourite, it will just need to be set up.
-
-
-## What can editors for programmers do?
-
-Editors for programmers let us edit *plain text*. Unlike programs such as Word, 
-Writer, or Pages, it does not let us *format* text.
-
-Since we use the editor to enter commands for the computer, we do not need any formatting, 
-we just want to use some of their built-in tricks:
-* Multiple file support – useful for larger projects with multiple files
-* Line numbering – each line shows the number. Great for debugging
-* Offset – (indentation) Very important in Python.
-* Coloring – custom code highlighting helps with readability. 
+لا يهم **المحرر (editor)** الذي تستخدمه، فقط لا تستخدم
+Notepad أو TextEdit أو Word أو Writer.
+إذا كان لديك بالفعل **محرر (editor)** مفضل لديك، فكل ما عليك فعله هو إعداده.
 
 
+## ماذا يمكن للمحررين للمبرمجين فعله؟
+
+**المحررين (editors)** للمبرمجين يتيح لنا تعديل *النص العادي*. على عكس البرامج مثل Word أو Writer أو Pages، فهو لا يسمح لنا ب*تنسيق* النص.
+
+نظرًا لأننا نستخدم **المحرر (editor)** لإدخال الأوامر للكمبيوتر، فإننا لا نحتاج إلى أي تنسيق،
+نريد فقط استخدام بعض الحيل المدمجة فيه:
+* دعم ملفات متعددة - مفيد للمشاريع الكبيرة مع ملفات متعددة
+* ترقيم الأسطر - كل سطر يظهر الرقم. رائع لإصلاح الأخطاء
+* **الاستطالة (offset)** - مهم جدًا في بايثون.
+* **الاستطالة (indentation)** - مهم جدًا في بايثون.
+* التلوين - تسليط الضوء على الكود المخصص يساعد على القراءة.
 
 > [note]
 >
@@ -39,35 +36,24 @@ we just want to use some of their built-in tricks:
 >    10          abort(404)
 > ```
 
+## اختيار وإعداد **محرر (editor)**
 
-## Choosing and setting up an editor
+نوصي باستخدام *VSCode* في الوقت الحالي.
 
-We recommend using *VSCode* for now.
+* [VSCode]({{ subpage_url('vscode') }}) **محرر (editor)** موصى به لجميع أنظمة التشغيل الرئيسية. ربما يكون محرر الكود الأكثر شيوعًا في الوقت الحاضر. يوفر العديد من الميزات ولديه قاعدة مستخدم ومطور كبيرة، لذلك يتم تحسينه باستمرار.
+* [Atom] **محرر (editor)** جيد مع تصميم بسيط ولكن بدون دعم رسمي بعد الآن (كنا نوصي بهذا المحرر في السابق).
 
-* [VSCode]({{ subpage_url('vscode') }}) recommended editor for all main operating systems. It is probably the most popular code editor nowadays. It offers many features and has a large user and developer base, so it is constantly being improved.
-* [Atom]({{ subpage_url('atom') }}) a good editor with a simple design but without official support anymore (we used to recommend this editor in past courses).
+### بيئة تطوير متكاملة (IDE)
 
-You will already have some editor on Linux (but you can always download VScode).
-Just try to type into your command line `gedit` or `kate`, and if an editor 
-opens, that's your default Linux editor.
+يستخدم معظم مبرمجي Python برامج معقدة وقوية للغاية، تسمى بـ `IDEs`
+(*Integrated Development Environments* - بيئة تطوير متكاملة*),
+مثل [PyCharm] و [Eclipse] و [KDevelop].
+ولكنها ليست مناسبة جدًا للمبتدئين.
 
-* [Gedit]({{ subpage_url('gedit') }}) – GNOME.
-* [Kate]({{ subpage_url('kate') }}) – KDE.
-
-
-
-### IDE
-
-Most Python programmers use complex and extremely powerful programs, so-called `IDEs` 
-(*Integrated Development Environments*),
-such as [PyCharm], [Eclipse] or [KDevelop].
-But they are not very suitable for beginners.
-
-If you want to use an IDE, you should really know it well. And also keep in mind
-that every coach knows only that one IDE that they use most often, so they might not
-be able to help you with another.
+إذا كنت ترغب في استخدام **بيئة تطوير متكاملة (IDE)**، فيجب أن تتعرف عليها جيدًا. وتذكر أيضًا
+أن كل مدرب يعرف فقط **بيئة التطوير المتكاملة (IDE)** التي يستخدمها في أغلب الأحيان، لذلك قد لا يكون قادرًا على مساعدتك في بيئة أخرى.
 
 [PyCharm]: https://www.jetbrains.com/pycharm/
 [Eclipse]: https://eclipse.org/
 [KDevelop]: https://www.kdevelop.org/
-
+[atom]: https://github.blog/news-insights/product-news/sunsetting-atom/

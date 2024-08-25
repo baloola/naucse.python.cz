@@ -7,7 +7,7 @@
 إذا كان جهاز الكمبيوتر الخاص بك يعمل بنظام ويندوز 64 بت، فقم بتنزيل *Windows installer (64-bit)*.
 إذا كان نظام التشغيل ويندوز الخاص بك 32 بت فقط، فقم بتنزيل *Windows installer (32-bit)*.
 
-> [ملاحظة]
+> [note]
 >
 > إذا كنت لا تعرف إصدار ويندوز الذي لديك، فما عليك سوى فتح **ابدأ** (**Start**)، والبحث عن **النظام**(**System**) وفتح **معلومات النظام**(**System information**).
 >
@@ -19,7 +19,7 @@
 بعد ذلك يمكنك تشغيل  المُثبِّت (installer) .
 
 
-> [تحذير]  في البداية، تأكد من تحديد**Install launcher for all Users** وأيضًا مهم جدًا: **Add Python 3.12 to PATH**.
+> [warning]  في البداية، تأكد من تحديد**Install launcher for all Users** وأيضًا مهم جدًا: **Add Python 3.12 to PATH**.
 
 
 (إذا لم تكن Admin، فلا تحدد *Install launcher for all Users*.)
