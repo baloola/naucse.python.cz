@@ -1,28 +1,26 @@
-# Python installation on Linux
 
-Installing Python on Linux is actually easy.
-The only difficult part could be that there are many distributions that
-needs different installation commands.
 
-## Python 3
+# تثبيت بايثون على لينكس
+تثبيت بايثون على لينكس سهل للغاية.
+الجزء الصعب الوحيد قد يكون وجود العديد من **التوزيعات (distributions)** التي تحتاج إلى **أوامر تثبيت (installation commands)** مختلفة.
 
-First check in your command line/terminal
-if you don't already have python3 installed.
-Open the terminal and type into it:
+## بايثون 3
+
+أولاً، تحقق في **سطر الأوامر (command line)** أو **المحطة (terminal)** الخاصة بك
+إذا لم يكن لديك بالفعل بايثون 3 مثبتًا.
+افتح المحطة واكتب فيها:
 
 ```console
 $ python3 --version
 ```
-If "Python" and version number (e. g. `Python 3.8.2`) will appear
-and the version is higher than or equal to 3.8 then everything is fine and please continue with
-further section.
 
-If there will be "Python" and version lower than 3.8, ask us how to proceed.
+إذا ظهر "بايثون" ورقم الإصدار (مثل Python 3.8.2) وكان الإصدار أعلى من أو يساوي 3.8، فإن كل شيء على ما يرام، يرجى المتابعة مع
+القسم التالي.
 
-If `bash: python3: command not found` or something similar will appear
-you will have to install Python3.
-Command depends on your distribution.
+إذا ظهر "بايثون" وإصدار أقل من 3.8، اسألنا عن كيفية المتابعة.
 
+إذا ظهر `bash: python3: command not found` أو شيء مشابه، فسيتعين عليك تثبيت بايثون 3.
+الأمر يعتمد على التوزيع (distribution) الخاص بك.
 
 * Fedora:
   {% filter markdown(inline=True) %}
@@ -36,6 +34,3 @@ Command depends on your distribution.
   $ sudo apt-get install python3
   ```
   {% endfilter %}
-
-If you are using some other distribution we expect that you already know
-how to install programs. If not try to ask Google.

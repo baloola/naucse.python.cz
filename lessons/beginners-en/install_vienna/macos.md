@@ -1,43 +1,45 @@
-# Python install for macOS
+Markdown
+# تثبيت بايثون على ماك
 
-First check in your command line/terminal
-if you don't already have python3 installed.
-Open the terminal and type into it:
+
+أولاً، تحقق في **سطر الأوامر (command line)** أو **المحطة (terminal)** الخاصة بك
+إذا لم يكن لديك بالفعل بايثون 3 مثبتًا.
+افتح المحطة واكتب فيها:
 
 ```console
 $ python3 --version
 ```
-If "Python" and version number (e. g. `Python 3.8.2`) will appear
-and the version is higher than or equal to 3.8 then everything is fine and please continue with
-further section.
 
-If not, then please install [Homebrew](http://brew.sh) which makes app and modules installation
-much easier.
+إذا ظهر "بايثون" ورقم الإصدار (مثل Python 3.8.2) وكان الإصدار أعلى من أو يساوي 3.8، فإن كل شيء على ما يرام، يرجى المتابعة مع
+القسم التالي.
 
-First check if brew is already installed by:
-```console
+إذا لم يكن كذلك، فيرجى تثبيت Homebrew الذي يجعل تثبيت التطبيقات والوحدات أسهل بكثير.
+
+تحقق أولاً مما إذا كان Homebrew مثبتًا بالفعل عن طريق:
+
+```Shell
 brew -v
 ```
 
-If previous command did not return a installed brew version, install it by entering this command in the command line/terminal:
+إذا لم يرد الأمر السابق بإصدار مثبت من Homebrew، فقم بتثبيته عن طريق إدخال هذا الأمر في سطر الأوامر (command line) أو المحطة (terminal):
 
-```console
-$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```Shell
+$ /bin/bash -c "$(curl -fsSL [https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh](https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh))"  
+
 ```
 
-And then you can just enter this command:
+ثم يمكنك فقط إدخال هذا الأمر:
 
-```console
+```Shell
 $ brew install python3
 ```
 
-Typing *python3 --version* again should already return you a used version of Python.
+يجب أن يؤدي كتابة python3 --version مرة أخرى إلى إرجاع إصدار قيد الاستخدام من بايثون.
 
+ملاحظة: - إذا كان لديك إصدارات أقدم من نظام التشغيل Mac OS X - على سبيل المثال 10.10.x، فلن تتوفر لك أحدث إصدارات Python و VSCode.
 
-**Note** - If you have an older versions of Mac OS X - for example 10.10.x, the newest versions of Python and VSCode will not work for you.
+ستحتاج إلى تثبيت إصدار أقدم من كليهما يدويًا.
 
-You will need to install an older version of both manually.
+`Python`: https://legacy.python.org/download/mac  سيقودك بالتأكيد إلى حل.
 
-`Python`: https://legacy.python.org/download/mac/ will definitely lead you to a solution.
-
-`VS Code`: For example January 2021 version of VS Code could solve it - refer to https://stackoverflow.com/a/67763370/7875133 for more details.
+VS Code: على سبيل المثال، يمكن أن يحل إصدار يناير 2021 من VS Code ذلك - راجع https://stackoverflow.com/a/67763370/7875133 للحصول على مزيد من التفاصيل.
