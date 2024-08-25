@@ -21,7 +21,7 @@ Notepad أو TextEdit أو Word أو Writer.
 
 > [note]
 >
-> That's what a piece of code looks like in the editor:
+> هكذا تبدو قطعة من الكود في المحرر:
 >
 > ```python
 >     1  @app.route('/courses/<course:course>/')
