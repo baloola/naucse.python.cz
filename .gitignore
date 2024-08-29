@@ -13,3 +13,5 @@ _build
 .arca
 .pytest_cache
 .idea
+
+naucse_build/
