@@ -1,7 +1,19 @@
 import os
 import re
+import argparse
 
-def extract_hrefs_and_srcs(folder_path):
+
+# Initialize parser
+parser = argparse.ArgumentParser()
+
+# Adding optional argument
+parser.add_argument("-u", "--host", help = "url host", default="https://baloola.github.io/sudan-house")
+
+# Read arguments from command line
+args = parser.parse_args()
+
+
+def extract_hrefs_and_srcs(folder_path, url):
   """
   Extracts href and src attributes from HTML files within a specified folder and its subfolders.
 
@@ -12,6 +24,7 @@ def extract_hrefs_and_srcs(folder_path):
     A list of tuples, where each tuple contains the href and src attributes of an HTML element.
   """
 
+  print (f"adding absolute path '{url}' ")
   hrefs_and_srcs = []
 
   for root, dirs, files in os.walk(folder_path):
@@ -21,8 +34,8 @@ def extract_hrefs_and_srcs(folder_path):
         with open(file_path, 'r') as f:
           content = f.read()
 
-        new_content = re.sub(r'(href|src)(="|= ")(/)', r'\1="https://baloola.github.io/sudan-house/', content)
-        final_content = re.sub(r'url\(\/static', 'url(https://baloola.github.io/sudan-house/static', new_content)
+        new_content = re.sub(r'(href|src)(="|= ")(/)', rf'\1="{url}/', content)
+        final_content = re.sub(r'url\(\/static', f'url({url}/static', new_content)
 
         with open(file_path, 'w') as f:
           f.write(final_content)
@@ -31,5 +44,4 @@ def extract_hrefs_and_srcs(folder_path):
 
 # Example usage
 folder_path = "./naucse_build"
-results = extract_hrefs_and_srcs(folder_path)
-print(results)
+results = extract_hrefs_and_srcs(folder_path, args.host)
