@@ -12,7 +12,6 @@ parser.add_argument("-u", "--host", help = "url host", default="https://baloola.
 # Read arguments from command line
 args = parser.parse_args()
 
-
 def extract_hrefs_and_srcs(folder_path, url):
   """
   Extracts href and src attributes from HTML files within a specified folder and its subfolders.
@@ -37,8 +36,11 @@ def extract_hrefs_and_srcs(folder_path, url):
         new_content = re.sub(r'(href|src)(="|= ")(/)', rf'\1="{url}/', content)
         final_content = re.sub(r'url\(\/static', f'url({url}/static', new_content)
 
+        head_end = final_content.find('</head>')
+        tracked_content = content[:head_end] + '<!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-CTEQ3ZJW1H"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "G-CTEQ3ZJW1H");</script>' + content[head_end:]
+
         with open(file_path, 'w') as f:
-          f.write(final_content)
+          f.write(tracked_content)
 
   return hrefs_and_srcs
 
