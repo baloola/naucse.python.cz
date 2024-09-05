@@ -37,7 +37,7 @@ def extract_hrefs_and_srcs(folder_path, url):
         final_content = re.sub(r'url\(\/static', f'url({url}/static', new_content)
 
         head_end = final_content.find('</head>')
-        tracked_content = content[:head_end] + '<!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-CTEQ3ZJW1H"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "G-CTEQ3ZJW1H");</script>' + content[head_end:]
+        tracked_content = final_content[:head_end] + '<!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-CTEQ3ZJW1H"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "G-CTEQ3ZJW1H");</script>' + final_content[head_end:]
 
         with open(file_path, 'w') as f:
           f.write(tracked_content)
