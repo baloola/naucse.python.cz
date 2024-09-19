@@ -44,6 +44,7 @@ def extract_hrefs_and_srcs(folder_path, url):
 
   return hrefs_and_srcs
 
-# Example usage
+
+
 folder_path = "./naucse_build"
 results = extract_hrefs_and_srcs(folder_path, args.host)
