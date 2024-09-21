@@ -3,7 +3,7 @@ import re
 import argparse
 
 
-# Initialize parser
+# Initialize parser.
 parser = argparse.ArgumentParser()
 
 # Adding optional argument
