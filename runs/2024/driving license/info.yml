@@ -1,0 +1,33 @@
+title: ورشة رخصة قيادة السيارة - فيينا
+subtitle: 2024 - بيت السودان
+place: |
+  بيت السودان
+timezone: Europe/Vienna
+default_time:
+  start: "14:00"
+  end: "16:00"
+description: |
+      الاجراءات و المتطلبات - خبرات و تجارب سابقة
+long_description: |
+  <br>
+  تعرّف على كيفية الحصول على رخصة القيادة في النمسا من خلال هذه الورشة الشاملة. ستغطي الورشة المتطلبات، الإجراءات، الدورات، الاختبارات، الرسوم، التجديد، والتخطيط الناجح للحصول على الرخصة
+  <br>
+  للاستفسار الرجاء التواصل مع الفريق المنظم
+derives: pyladies-en
+vars:
+  user-gender: m
+  pyladies: false
+  coach-present: true
+mentors:
+  - name: محمد داؤد
+    img: img/team/mDawood.jpeg
+    role: "مدرب"
+    links:
+      - mail: Mohammedali@gmx.at
+
+plan:
+  - title: ورشة رخصة قيادة السيارة
+    slug: driving-license
+    date: 2024-05-19
+    materials:
+      - lesson: beginners-en/driving-license
