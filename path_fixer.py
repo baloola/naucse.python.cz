@@ -7,7 +7,7 @@ import argparse
 parser = argparse.ArgumentParser()
 
 # Adding optional argument
-parser.add_argument("-u", "--host", help = "url host", default="https://baloola.github.io/sudan-house")
+parser.add_argument("-u", "--host", help = "url host", default="https://sudan-club-austria.github.io/training-unit")
 
 # Read arguments from command line
 args = parser.parse_args()
