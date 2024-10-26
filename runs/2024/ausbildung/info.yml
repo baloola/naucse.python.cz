@@ -1,0 +1,43 @@
+title: ورشة التدريب المهني (تقنية المعادن) - فيينا
+subtitle: 2024 - بيت السودان
+place: |
+  بيت السودان
+timezone: Europe/Vienna
+default_time:
+  start: "14:00"
+  end: "16:00"
+description: |
+      ورشة التدريب المهني (تقنية المعادن)
+long_description: |
+  <br>
+  تعرف في هذه الورشة على جميع المعلومات المتعلقة بمهنة تقنية المعادن. تقوم الورشة بتغطية جميع الجوانب المتعلقة بدراسة تقنية المعادن. حيث يقوم المتحدثون بتغطية متطلبات دراسة الهندسة الميكانيكية بالجامعات التقنية كما ايضا يتم تغطية المتطلبات من اجل دراسات الدورات المتخصصة بمهنة محدده كاللحام على سبيل المثال. ايضا يتم التطرق لسوق العمل والفرص المتوفرة في هذا المجال.
+  <br>
+  للاستفسار الرجاء التواصل مع الفريق المنظم
+derives: pyladies-en
+vars:
+  user-gender: m
+  pyladies: false
+  coach-present: true
+mentors:
+  - name: أحمد المنوفي
+    img: img/team/munoofi.jpeg
+    role: "منظم, مدرب"
+    links:
+      - mail: mailto:ahmad.elmenofi@hotmail.com
+  - name: مختار محمد اسحاق
+    img: img/team/mukhtar.JPG
+    role: "مدرب"
+    links:
+      - mail: mailto:mukhtar-2@hotmail.com
+  - name: عزالدين يحيي
+    img: img/team/izzaldeen.png
+    role: "مدرب"
+    links:
+      - mail: mailto:ezzo_666@yahoo.com
+
+plan:
+  - title: ورشة التدريب المهني (تقنية المعادن)
+    slug: cv
+    date: 2024-09-15
+    materials:
+      - lesson: beginners-en/ausbildung
