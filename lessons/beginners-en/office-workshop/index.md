@@ -5,4 +5,4 @@
 
 * المواد:
 
-* [للتدريب](https://drive.google.com/drive/folders/1_NDgZ9vVPiSh8YA5e0MFUlQa7kcyVv2m?usp=sharing)
+[للتدريب](https://drive.google.com/drive/folders/1_NDgZ9vVPiSh8YA5e0MFUlQa7kcyVv2m?usp=sharing)
