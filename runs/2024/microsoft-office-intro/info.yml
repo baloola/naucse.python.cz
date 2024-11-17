@@ -4,8 +4,8 @@ place: |
   بيت السودان
 timezone: Europe/Vienna
 default_time:
-  start: "14:00"
-  end: "16:00"
+  start: "16:30"
+  end: "18:30"
 description: |
       تعلم اساسيات برنامج Office
 long_description: |
