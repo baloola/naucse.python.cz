@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  sudan-house:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+
+    ports:
+        - "8003:8003"
+    volumes:
+      - ./:/opt/
+    command:  pipenv run serve --host 0.0.0.0

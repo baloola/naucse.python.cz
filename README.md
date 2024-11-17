@@ -1,7 +1,17 @@
 # Sudan Club training materials
 
+## Development
 
-## Licence
+you can spin up a local instance for development using the `docker-compose` file:
+
+```bash
+docker compose up
+```
+then simply navigate in your browser to `http://127.0.0.1:8003`
+
+Changes in the code (`markdown files`) should be synchronized.
+
+## License
 
 
 The code is licensed under the terms of the MIT license, see [LICENSE.MIT] file
