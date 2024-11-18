@@ -18,7 +18,7 @@ The code is licensed under the terms of the MIT license, see [LICENSE.MIT] file
 for full text. By contributing code to this repository, you agree to have it
 licensed under the same license.
 
-Content has its own license specified in the appropriate matadata.
+Content has its own license specified in the appropriate metadata.
 Only [free content licenses] are used. By contributing to an already licensed
 document, you agree to have it licensed under the same license.
 (And feel free to add yourself to the authors list in its metadata.)
