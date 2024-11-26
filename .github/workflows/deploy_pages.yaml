@@ -29,7 +29,7 @@ jobs:
 
     # Build base image
     - name: Build docker image
-      run: docker build . -t sudan-house
+      run: docker build --no-cache . -t sudan-house
 
     # Generate static files for website, always exits with code 1 :(
     - name: Generate static files via freeze
