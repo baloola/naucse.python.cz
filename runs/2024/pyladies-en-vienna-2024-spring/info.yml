@@ -46,7 +46,7 @@ mentors:
 plan:
   - title: Installations تثبيت البرامج
     slug: install_home
-    date: 2024-12-08
+    date: 2024-12-15
     materials:
       - lesson: beginners-en/install_vienna
       - lesson: beginners-en/install-editor
