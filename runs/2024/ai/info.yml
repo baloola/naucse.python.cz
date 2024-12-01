@@ -1,0 +1,33 @@
+title: ورشة الذكاء الاصطناعي - فيينا
+subtitle: 2024 - بيت السودان
+place: |
+  بيت السودان
+timezone: Europe/Vienna
+default_time:
+  start: "17:00"
+  end: "19:00"
+description: |
+      الذكاء الاصطناعي و استخداماته.
+long_description: |
+  <br>
+  تعرّف على استخدامات الذكاء الاصطناعي في مختلف المجالات مثل العمل اليومي، المحاسبة، تصميم البوسترات، وغيرها.
+  <br>
+  للاستفسار الرجاء التواصل مع الفريق المنظم
+derives: pyladies-en
+vars:
+  user-gender: m
+  pyladies: false
+  coach-present: true
+mentors:
+  - name: م.محمد ازهري
+    img: img/team/mDawoodk.jpeg
+    role: "مدرب"
+    links:
+      - mail: Mohammed@gmail.com
+
+plan:
+  - title: AI ورشة الذكاء الاصطناعي
+    slug: AI
+    date: 2024-12-01
+    materials:
+      - lesson: beginners-en/ai
