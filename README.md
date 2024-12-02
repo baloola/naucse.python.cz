@@ -11,6 +11,14 @@ then simply navigate in your browser to `http://127.0.0.1:8003`
 
 Changes in the code (`markdown files`) should be synchronized.
 
+To enforce changes in some dependencies (e.g updating a photo in [naucse] )
+
+You can build first disabling cache
+
+```bash
+docker compose build --no-cache
+```
+
 ## License
 
 
@@ -26,3 +34,4 @@ When contributing new document(s) a license must be specified in the metadata.
 
 [LICENSE.MIT]: https://github.com/pyvec/naucse.python.cz/blob/master/LICENSE.MIT
 [free content licenses]: https://en.wikipedia.org/wiki/List_of_free_content_licenses
+[naucse]: https://github.com/baloola/naucse.git
