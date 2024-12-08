@@ -44,7 +44,7 @@ mentors:
       - mail: mailto:behairiahmed@gmail.com
 
 plan:
-  - title: Installations تثبيت البرامج
+  - title:  تثبيت البرامج (Installations)
     slug: install_home
     date: 2024-12-15
     materials:
@@ -56,7 +56,7 @@ plan:
       - title: VS Code ملخص اختصار المفاتيح لنظام ماك
         url: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
         type: cheatsheet
-  - title: مقدمة، فحص التثبيت (installation)
+  - title: مقدمة، فحص التثبيت (Installation)
     slug: install
     date: 2024-12-22
     materials:
