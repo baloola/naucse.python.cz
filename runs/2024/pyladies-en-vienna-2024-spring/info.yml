@@ -56,24 +56,25 @@ plan:
       - title: VS Code ملخص اختصار المفاتيح لنظام ماك
         url: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
         type: cheatsheet
-# - title: مقدمة، فحص التثبيت (installation)
-#   slug: install
-#   date: 2024-12-15
-#   materials:
-#   - title: مُلخص اختصارات لوحة المفاتيح
-#     url: https://drive.google.com/file/d/1Bvnb52oirQDiZ7WI5t4Q8UeCd10-_gpT
-#     type: cheatsheet
-#   - lesson: beginners-en/cmdline
-#   - lesson: beginners-en/first-steps
-#   - lesson: beginners-en/lesson-1-homework
-#     type: homework
-#   - title: تمرين Google colab
-#     url: https://drive.google.com/file/d/1KPlvbwGpIe8HQVkancKk6wuTwhV5VkRc
-#     type: cheatsheet
+  - title: مقدمة، فحص التثبيت (installation)
+    slug: install
+    date: 2024-12-22
+    materials:
+    - lesson: beginners-en/introduction2
+    - lesson: beginners-en/cmdline
+    - lesson: beginners-en/first-steps
+    - lesson: beginners-en/lesson-1-homework
+      type: homework
+    - title: تمرين Google colab
+      url: https://drive.google.com/file/d/1KPlvbwGpIe8HQVkancKk6wuTwhV5VkRc
+      type: cheatsheet
+    - title: مُلخص اختصارات لوحة المفاتيح
+      url: https://drive.google.com/file/d/1Bvnb52oirQDiZ7WI5t4Q8UeCd10-_gpT
+      type: cheatsheet
 
 # - title: First Program, Print
 #   slug: hello
-#   date: 2024-03-26
+#   date: 2024-12-29
 #   materials:
 #   - lesson: beginners-en/hello-world
 #   - lesson: beginners-en/print

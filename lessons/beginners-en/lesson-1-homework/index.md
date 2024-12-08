@@ -1,21 +1,25 @@
 
-# Homework
+### الواجبات المنزلية (Homework)
 
-Try out these exercises at home. These are just examples. Try to find some more examples in the internet or just play around!
+جرب هذه التمارين في المنزل. هذه مجرد أمثلة. حاول العثور على المزيد من الأمثلة على الإنترنت أو فقط العب قليلاً!
 
-1. Try to start up Python in Google Collab and see if this gives you correct results:
+1. حاول بدء تشغيل Python في Google Collab ومعرفة ما إذا كان هذا يعطيك النتائج الصحيحة:
+
 ```pycon
 1+1
 2
 ```
-2. How about other operations? Do you remember what `*` and `/` are doing? What about `%` and `**`?
-If you don't remember try figuring it out from the Python console. Try, e.g. `1%4`, `2%4`, `3%4`, `4%4`, `5%4`... or `2**1`, `2**2`, `2**3`, `2**4`, `2**5`... Can you explain the patterns?
-3. In Python you can add also strings of characters. E.g. `'A' + 'B'` would produce `'AB'`. What's wrong with the result of the following?
+2. ماذا عن العمليات الأخرى؟ هل تتذكر ما يفعله `*` (الضرب) و `/` (القسمة)؟ ماذا عن `%` (الباقي) و `**` (الأس)؟
+إذا كنت لا تتذكر ، فحاول معرفة ذلك من وحدة تحكم Python. جرب ، على سبيل المثال ، `1%4` ، `2%4` ، `3%4` ، `4%4` ، `5%4` ... أو `2**1` ، `2**2` ، `2**3` ، `2**4` ، `2**5` ... هل يمكنك شرح الأنماط؟
+
+3. في Python ، يمكنك أيضًا إضافة strings من الأحرف. على سبيل المثال ، `'A' + 'B'` سينتج `'AB'`. ما الخطأ في نتيجة ما يلي؟
+
 ```pycon
 'Hello' + 'World!'
 ```
-4. Try adding a number to a string. What happens? What is Python trying to tell you? What if you try to add a string to a number?
-5. How about multiplying a string by a number? Can this work? `'Ha' * 10`
+4. حاول إضافة رقم إلى string. ماذا يحدث؟ ماذا يحاول Python إخبارك؟ ماذا لو حاولت إضافة string إلى رقم؟
+
+5. ماذا عن ضرب string في رقم؟ هل يمكن أن يعمل هذا؟ `'Ha' * 10`
 
 
-You can find our tutorial on how to use the Google Colab and how to use it to submit the homeworks here: [Google Colab Tutorial](//drive.google.com/file/d/1KPlvbwGpIe8HQVkancKk6wuTwhV5VkRc/view).
+يمكنك العثور على البرنامج التعليمي الخاص بنا حول كيفية استخدام Google Colab وكيفية استخدامه لتقديم الواجبات المنزلية هنا: [تمرين Google colab](//drive.google.com/file/d/1KPlvbwGpIe8HQVkancKk6wuTwhV5VkRc/view).

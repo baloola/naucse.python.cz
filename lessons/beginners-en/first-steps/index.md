@@ -1,50 +1,53 @@
-## First commands in Python
+## الأوامر الأولى في بايثون (First commands in Python)
 
-Let's see if we installed `Python` successfully!
+دعونا نرى ما إذا قمنا بتثبيت `Python` بنجاح!
 
-First open your terminal and we can now start Python (specifically, the Python console).
-To do that, just write `python3` or `py` or `python` into the terminal:
+أولاً افتح **المحطة (terminal)** ويمكننا الآن بدء تشغيل بايثون (على وجه التحديد ، وحدة تحكم بايثون -python console-).
+لذلك ، ما عليك سوى كتابة `python3` أو `py` أو `python` في **المحطة  (terminal)**:
 
 ``` plain
 $ python3
-Python 3.8.1 (default, Dec 24 2019, 17:02:07) 
+Python 3.8.1 (default, Dec 24 2019, 17:02:07)
 [GCC 9.2.1 20191008] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-This command will print some information. In the first line, it shows which version of Python you have (you should have Python 3.8+).
+## الأوامر الأولى في بايثون (First commands in Python)
 
-The command line starts with a `>>>` symbol. This way Python prompts (asks) you for instructions. This is the same as the standard command line, but instead of commands like `cd` or `mkdir`, you write Python specific commands.
+سيقوم هذا الأمر بطباعة بعض المعلومات. في السطر الأول، يُظهر إصدار Python لديك (يجب أن يكون لديك Python 3.8+).
 
-> [warning] What if previous command returns something else?
-> If you are on Windows, the command to run is sometimes called `py` or `python` instead of `python3`, try that instead. If that does not work either:
-> 
-> Then most probably the Python installation `was not successful or complete`.
-> 
-> Please go back to [Python Installation]({{ lesson_url('beginners-en/install_vienna') }}) and try installing Python again according to the instructions for your operating system.
-> 
-> If something unexpected happened or you need help, please raise a hand and ask for a mentor support.
+يبدأ **سطر الأوامر (Command Line)** برمز `>>>`. بهذه الطريقة ، يطلبك Python (يسألك) للحصول على التعليمات. هذا هو نفسه **سطر الأوامر القياسي (Standard Command Line)** ، ولكن بدلاً من الأوامر مثل `cd` أو `mkdir` ، يمكنك كتابة أوامر بايثون المحددة.
+
+> [warning] ماذا لو أعاد الأمر السابق شيئًا آخر؟
+> إذا كنت تستخدم Windows ، فإن الأمر الذي يجب تشغيله يسمى أحيانًا `py` أو `python` بدلاً من `python3` ، جرب ذلك بدلاً من ذلك. إذا لم ينجح ذلك أيضًا:
 >
-> It is very important that this first step works for all of you.
+> ثم على الأرجح أن تثبيت Python `لم يكن ناجحًا أو كاملاً`.
 >
-> If you are on `Mac` or `Linux` the `python` command will usually run `python version 2` which is `not` what we want - if `python3` works, perfect, if not, please try reinstalling the newest `python` or ask a mentor for help.
+> يرجى الرجوع إلى [Python (installation) تثبيت]({{ lesson_url('beginners-en/install_vienna') }}) وحاول تثبيت Python مرة أخرى وفقًا لتعليمات نظام التشغيل الخاص بك.
+>
+> إذا حدث شيء غير متوقع أو كنت بحاجة إلى المساعدة ، يرجى رفع يدك وطلب دعم من أحد الموجهين.
+>
+> من المهم جدًا أن تعمل هذه الخطوة الأولى بالنسبة لكم جميعًا.
+>
+> إذا كنت تستخدم نظام التشغيل `Mac` أو `Linux` ، فإن الأمر `python` عادةً ما يشغل `python version 2` وهو `ليس` ما نريده - إذا كان `python3` يعمل ، ممتاز ، وإلا ، يرجى إعادة تثبيت أحدث إصدار من `python` أو طلب المساعدة من أحد الموجهين.
 
-## Quick task 
+## مهمة سريعة
 
-If you have the terminal ready don't waste time! Type `print("Hello, world!")` in the Python terminal! 
+إذا كان لديك **المحطة (terminal)** جاهزًة ، فلا تضيع الوقت! اكتب `print("Hello, world!")` في وحدة تحكم Python!
 
 {% filter solution %}
 
-What happened? Python "printed out" `Hello, world!` for you. It's an old programming tradition, going back to 1970s. It is a traditional first command executed by people who are learning a given programming language, which illustrates the basic syntax of the language.
+## ماذا حدث؟
 
-In Python one can simply execute `print("Hello, world!")`. In other programming languages it might not be that simple! Feel free to search for examples of a "Hello world" code in C++, Java, HTML, JavaScript or other languages. 
+قام Python بـ "طباعة" `Hello, world!` لك. إنه تقليد برمجي قديم يعود إلى سبعينيات القرن الماضي. إنه الأمر الأول التقليدي الذي ينفذه الأشخاص الذين يتعلمون لغة برمجة معينة ، والذي يوضح بناء جملة اللغة الأساسية.
 
+في Python ، يمكن ببساطة تنفيذ `print("Hello, world!")`. قد لا يكون الأمر بهذه البساطة في لغات البرمجة الأخرى! لا تتردد في البحث عن أمثلة على رمز "Hello world" في C ++ أو Java أو HTML أو JavaScript أو لغات أخرى.
 {% endfilter %}
 
-## Python basics
+## أساسيات بايثون (Python basics)
 
-Python can work as a simple calculator. Try running following commands in your Python and you should see these responses.
+يمكن لـ Python العمل كآلة حاسبة بسيطة. حاول تشغيل الأوامر التالية في Python الخاص بك ويجب أن ترى هذه الردود.
 
 ```pycon
 >>> 1
@@ -74,12 +77,11 @@ Python can work as a simple calculator. Try running following commands in your P
 >>> (2+3) * 4
 20
 ```
-
 > [note]
-> Python prints the greater-than signs `>>>` and the answer by itself!
-> You just write number and press Enter.
+> يقوم Python بطباعة علامات أكبر من `>>>` والإجابة بنفسه!
+> ما عليك سوى كتابة الرقم ثم الضغط على Enter.
 
-Notice that commands from the standard command line do not work here, although the window looks similar:
+لاحظ أن الأوامر من **سطر الأوامر القياسي (Standard Command Line)** لا تعمل هنا ، على الرغم من أن النافذة تبدو متشابهة:
 
 ```pycon
 >>> whoami
@@ -88,28 +90,34 @@ Traceback (most recent call last):
 NameError: name 'whoami' is not defined
 ```
 
-This is an *error message* which appears every time when you do anything wrong. You will see a lot of them during the course. Have a look at it carefully so you can recognise it later.
 
-If you got this far, congratulations! You have installed Python and it works. You can now quit the Python console and close the command prompt.
+## رسالة الخطأ (Error message)
 
-To quit, just type `exit()` with empty parentheses
+هذه هي *رسالة الخطأ (Error message)* التي تظهر في كل مرة تقوم فيها بأي شيء خاطئ. سترى الكثير منها خلال الدورة. ألقِ نظرة فاحصة عليها حتى تتمكن من التعرف عليها لاحقًا.
 
+إذا وصلت إلى هذه المرحلة ، فتهانينا! لقد قمت بتثبيت Python ويعمل. يمكنك الآن الخروج من وحدة تحكم Python وإغلاق **المحطة  (Command Prompt)**.
 
-<div class="highlight"><pre>
+لإنهاء العملية ، ما عليك سوى كتابة `exit()` مع قوسين فارغين
+
+<div style=" direction: ltr" class="highlight"><pre>
 <span class="gp">&gt;&gt;&gt;</span> exit()
 <span class="gp">$</span>
 </pre></div>
 
-The greater-than signs `>>>` change back to `$` or `>`. This tells you that you're back on the system prompt. Now commands like `whoami` and `cd` work again, but Python commands like `1 + 2` won't work. You can re-activate the Python prompt anytime you want by simply typing `python3`  
+تتغير علامات أكبر من `<<<` مرة أخرى إلى `$` أو `<`. هذا يخبرك بأنك عدت إلى موجه النظام. الآن تعمل الأوامر مثل `whoami` و `cd` مرة أخرى ، ولكن أوامر Python مثل `1 + 2` لن تعمل. يمكنك إعادة تنشيط موجه Python في أي وقت تريده ببساطة عن طريق كتابة `python3`
 
+## الخروج
 
-The terminal can be closed by typing `exit` or press `CTRL+D`.
+الآن يمكنك تجربة أمر آخر - الأمر الذي يغلق نافذة **المحطة (Command Prompt)** - `exit`.
+اختياريًا أيضًا `CTRL+D` يؤدي نفس الشيء.
 
 ```console
 $ exit
 ```
 
-As a last exercise, try to run the Python console again
+## تمرين أخير
 
-- open the command prompt (the terminal)
-- run Python
+كتمرين أخير ، حاول تشغيل وحدة تحكم Python مرة أخرى
+
+- افتح **المحطة (Command Prompt)**
+- قم بتشغيل Python
