@@ -35,7 +35,7 @@
 
 * Windows (English): ابدأ (Start ) ← اكتب "cmd" ← موجه الأوامر (Command prompt)
 * Windows (إصدارات قديمة): قائمة ابدأ (Start ) ← جميع البرامج (All programs) ← ملحقات(Accessories) ← موجه الأوامر (Command prompt)
-* macOS (English): التطبيقات ← المرافق ← Terminal
+* macOS (English): التطبيقات (Applications)← المرافق (Utilities) ← Terminal
 * Linux (KDE): القائمة الرئيسية ← ابحث عن Console
 * Linux (GNOME): Super ← ابحث عن Terminal
 
@@ -147,8 +147,8 @@ C:\Users\Alex\Desktop
 {% endcall %}
 
 > [note] ملاحظة لمستخدمي Windows
-> إذا قمت بتغيير **المجلد (Directory)** إلى قرص مختلف (إلى `D:` من `C:`)
-> يجب عليك إدخال اسم القرص (`D:`) كأمر خاص قبل
+> إذا قمت بتغيير **المجلد (Directory)** إلى قرص مختلف (إلى `:D` من `:C`)
+> يجب عليك إدخال اسم القرص (`:D`) كأمر خاص قبل
 > إدخال `cd`.
 
 ## إنشاء **مجلد (Directory)**
