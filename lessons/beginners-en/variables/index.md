@@ -1,38 +1,35 @@
-# Square
+# المربع (Square)
 
-Now we'll go back to elementary school and try to write a program
-that calculates the perimeter and the area of a square.
+الآن سنعود إلى المدرسة الابتدائية ونحاول كتابة برنامج
+يحسب محيط ومساحة مربع.
 
-> [note] Maths
-> I hope that this won't scare anyone off
-> but the word "computer" is derived from the
-> word *computing*. So there's no need
-> to be scared, knowledge from elementary
-> school will be enough for basic programming.
+> [note] ملاحظة حول الرياضيات
+> آمل أن لا يخيف هذا أحدًا
+> ولكن كلمة "كمبيوتر" مشتقة من كلمة *حوسبة* (computing).
+> لذلك لا داعي للخوف ، ستكون المعرفة المكتسبة من المدرسة الابتدائية
+> كافية للبرمجة الأساسية.
 
-The perimeter of a square with a side length of <var>a</var>
-can be computed by the **<var>P</var> = 4<var>a</var>**
-formula, and the area formula is **<var>S</var> = <var>a</var>²**.
-So let's say that our square has a side length of **<var>a</var> = 356 cm**.
+يمكن حساب محيط مربع بطول ضلع يبلغ <var>a</var> بواسطة معادلة **<var>P</var> = 4<var>a</var>**
+ ، ومعادلة المساحة هي **<var>S</var> = <var>a</var>²**.
+لذلك لنفترض أن مربعنا له طول ضلع يساوي **<var>a</var> = 356 سم**.
 
-
-Print the result with `print()`.
-Save the program into the file <code>~/pyladies/02/square.py</code>
-and run it; this is what it should print:
+اطبع النتيجة باستخدام `()print`.
+احفظ البرنامج في الملف <code>sudan/02/square.py/~</code>
+وشغله؛ هذا ما يجب أن يطبعه:
 
 ```
 The perimeter of a square with a side of 356 cm is 1424 cm.
 The area of a square with a side of 356 cm is 126736 cm2
 ```
 
-The result should be computed by Python so don't write the
-numbers 1424 and 126736 into your code. <br>
-If you don't know what to do, look into your program <code>printing.py</code>
-from the lesson about [`print`]({{ lesson_url('beginners-en/print') }}),
-where one of the lines does a similar thing.
+يجب حساب النتيجة بواسطة Python لذلك لا تكتب
+الأرقام 1424 و 126736 في الكود الخاص بك. <br>
+إذا كنت لا تعرف ما يجب القيام به ، فانظر إلى برنامجك <code>printing.py</code>
+من الدرس حول [`الطباعة والأخطاء (Print and errors)`]({{ lesson_url('beginners-en/print') }})،
+حيث يقوم أحد الأسطر بعمل مشابه.
 
 {% filter solution %}
-    A program which prints the right result could look like this:
+    البرنامج الذي يطبع الاجابة الصحيحة سيكون على النحو التالي :
 
     ```python
     print('The perimeter of a square with a side of 356 cm is', 4 * 356, 'cm')
@@ -41,11 +38,11 @@ where one of the lines does a similar thing.
 {% endfilter %}
 
 
-## Smaller square
+## مربع أصغر (Smaller square)
 
-If everything works, try to change the program
-so it computes the perimeter and the area
-of a square with a side of 123 cm.
+إذا كان كل شيء يعمل ، فحاول تغيير البرنامج
+بحيث يحسب محيط ومساحة
+مربع بطول ضلع 123 سم.
 
 {% filter solution %}
     ```python
@@ -55,19 +52,19 @@ of a square with a side of 123 cm.
 {% endfilter %}
 
 
-## Variables
+## المتغيرات (Variables)
 
-Could you make it even for a side of 3945 cm, 832 cm, 956 cm?
-Do you enjoy rewriting numbers?
-If the program were longer (few pages)
-how would you make sure that you didn't forget
-to rewrite one of the numbers?
+هل يمكنك جعلها حتى لجانب من 3945 سم ، 832 سم ، 956 سم؟
+هل تستمتع بإعادة كتابة الأرقام؟
+إذا كان البرنامج أطول (عدد قليل من الصفحات)
+كيف يمكنك التأكد من أنك لم تنس
+إعادة كتابة أحد الأرقام؟
 
-There is a way how to write a program without
-rewriting all the numbers every time:
-You name the side of the square and then you just
-use that name. In Python, **variables** are used to name values.
-They are being used this way:
+هناك طريقة لكتابة برنامج بدون
+إعادة كتابة جميع الأرقام في كل مرة:
+أنت تسمي ضلع المربع ثم تستخدم ذلك فقط
+الاسم. في Python ، تُستخدم **المتغيرات (variables)** لتسمية القيم.
+يتم استخدامها بهذه الطريقة:
 
 ```python
 side = 123
@@ -75,66 +72,64 @@ print("The perimeter of a square with a side of", side,"cm is ", side * 4,"cm.")
 print("The area of a square with a side of", side,"cm is", side * side, "cm2.")
 ```
 
-So you write the name, then `=` and after that
-the expression whose value will be *assigned*
-to that variable.
-Whenever you write the name of the variable,
-Python will use just its value.
+يمكنك كتابة الاسم ، ثم `=` وبعد ذلك
+التعبير الذي سيتم *تعيين* قيمته
+إلى ذلك المتغير.
+كلما كتبت اسم المتغير ،
+سيستخدم Python قيمته فقط.
 
 > [style-note]
-> The convention here is to put a space before and after the equals sign.
+> الاتفاقية هنا هي وضع مسافة قبل وبعد علامة المساواة.
 
-Which leads us to one of the core principles of programming:
-*Don't repeat yourself*, **<abbr class="initialism">DRY</abbr>**.
-When there is a value, an expression or the same
-piece of code repeatedly, a good programmer will
-name that part, and then they use the name several times.
-It often happens that the program needs to be changed - either
-there is a mistake or the task has changed.
-And then, it is easier to make that change only in one place.
+وهذا يقودنا إلى أحد المبادئ الأساسية للبرمجة:
+*لا تكرر نفسك (Don't repeat yourself)* ، **<abbr class="initialism">DRY</abbr>**.
+عندما يكون هناك قيمة أو تعبير أو نفس الجزء من البرنامج بشكل متكرر ، فإن المبرمج الجيد سوف
+يسمي هذا الجزء ، ثم يستخدم الاسم عدة مرات.
+غالبًا ما يحتاج البرنامج إلى التغيير - إما
+هناك خطأ أو تغيرت المهمة.
+وبعد ذلك ، يسهل إجراء هذا التغيير في مكان واحد فقط.
 
-On top of that, clear names makes reading the
-program much easier: `4 * side` (maybe `squareSide` would be clearer)
-doesn't need any comment, but with `4 * 183`, it's not clear what
-the numbers mean.
+علاوة على ذلك ، فإن الأسماء الواضحة تجعل قراءة البرنامج أسهل: `4 * side` (ربما `squareSide` سيكون أكثر وضوحًا)
+لا يحتاج إلى أي تعليق ، ولكن مع `4 * 183` ، ليس من الواضح ما
+تعني الأرقام.
 
 
 > [extra-activity]
 >
-> ## Circles
+> ## الدوائر (Circles)
 >
-> *This is an extra task! You can skip it.*
+> *هذه مهمة إضافية! يمكنك تخطيها.*
 >
-> Change of the task!
-> Try to expand the program so that it computes the perimeter and the area of
-> a circle where the radius will be the same value as the side length from your code.
-> The perimeter of a circle with radius <var>r</var>
-> is <var>o</var> = 2π<var>r</var>, the area is <var>S</var> = π<var>r</var>²
-> and π is approx. 3.1415926.
+> تغيير المهمة!
+> حاول توسيع البرنامج بحيث يحسب محيط ومساحة
+> دائرة حيث سيكون نصف القطر هو نفس قيمة طول الضلع من كودك.
+> محيط دائرة نصف قطرها <var>r</var>
+> هو <var>o</var> = 2π<var>r</var> ، المساحة هي <var>S</var> = π<var>r</var>²
+> و π تقريبًا 3.1415926.
 >
-> Feel free to use more variables! It's a good practice to first calculate the result. Store it in a variable and then use it in a `print`.
+> لا تتردد في استخدام المزيد من المتغيرات! من الجيد أولاً حساب النتيجة. قم بتخزينه في متغير ثم استخدمه في `print`.
 >
-> Name all variables appropriately.
+> قم بتسمية جميع المتغيرات بشكل مناسب.
 >
-> ### But wait, there's more
-> Python already has some variables (or constants) defined for you. You can put `from math import pi` in the beginning of your program. Now you have a variable `pi` available, which holds the value of π. What exactly is `from math import pi`? You'll learn that during one of the future lessons! 
+> ### ولكن انتظر ، هناك المزيد
+> يحتوي Python بالفعل على بعض المتغيرات (أو الثوابت) المعرفة مسبقًا. يمكنك وضع `from math import pi` في بداية برنامجك. الآن لديك متغير `pi` متاح ، والذي يحتوي على قيمة π. ما هو بالضبط `from math import pi`؟ ستتعلم ذلك خلال أحد الدروس المستقبلية!
 
 
-## Comments
+## التعليقات (Comments)
 
-Now we will make our code clearer with *comments*.
-In Python, the comment begins with a Hash (Pound) sign **"#"**,
-after which you can write anything until the end of the line.
-Everything following this sign is ignored by Python code execution.
+الآن سنجعل كودنا أكثر وضوحًا باستخدام *التعليقات*.
+في Python ، يبدأ التعليق بعلامة هاش **"#"** ،
+بعد ذلك يمكنك كتابة أي شيء حتى نهاية السطر.
+يتم تجاهل كل شيء بعد هذه العلامة بواسطة تنفيذ كود Python.
 
-Comments are important! Programs are not read only by computers, but also by other humans.
-In your comments, you can include statements like: what the whole program does,
-explain how a more complicated part works and clarify something
-that is not clear enough.
+التعليقات مهمة! لا تقرأ البرامج فقط بواسطة أجهزة الكمبيوتر ، ولكن أيضًا بواسطة البشر الآخرين.
+في تعليقاتك ، يمكنك تضمين عبارات مثل: ما الذي يفعله البرنامج بأكمله ،
+شرح كيفية عمل جزء أكثر تعقيدًا وتوضيح شيء ما
+ليس واضحا بما فيه الكفاية.
 
-Whenever you write a program, try to get into the role of someone who will read it,
-and all that may be unclear should be specified in the comments.
-Help yourself. After a few months you will not remember what the code is about.
+عندما تكتب برنامجًا ، حاول أن تدخل في دور شخص سيقرأه ،
+وكل ما قد يكون غير واضح يجب تحديده في التعليقات.
+ساعد نفسك. بعد بضعة أشهر لن تتذكر ما هو البرنامج.
 
 ```python
 # This program computes the perimeter and the area of a square
@@ -145,49 +140,48 @@ print("The area of a square with a side of", side,"cm is", side * side, "cm2.")
 ```
 
 > [style-note]
-> The convention is that when you write a comment on the same line
-> as the code, there are two spaces or more before `#`,
-> then after `#` there is one more space.
+> الاتفاقية هي أنه عند كتابة تعليق في نفس السطر
+> مثل الكود ، يوجد مسافتان أو أكثر قبل `#` ،
+> ثم بعد `#` يوجد مسافة واحدة أخرى.
 
 
-There are many opinionated suggestions how often and where to use comments. 
-These suggestions also depend on level of experience of programmers contributing to the project.
- 
-Easiest way how to decide in the beginnings where/when to place comments and what should they contain is: 
+هناك العديد من التفضيلات الشخصية حول متى وأين استخدام التعليقات.
+تعتمد هذه التفضيلات أيضًا على مستوى خبرة المبرمجين الذين يساهمون في المشروع.
 
-Comment often and whenever you are not 100% sure about certain part of code that
-your future YOU in a few months will understand what it does and why.
+أسهل طريقة لتحديد اين و متى وضع التعليقات وما الذي يجب أن يحتويه هو:
 
-## Input
+علق كثيرًا وكلما لم تكن متأكدًا بنسبة 100٪ من جزء معين من الكود
+ستفهم  أنت بعد بضعة أشهر ما يفعله ولماذا.
 
-Finally, we will learn how to improve the program so that we don't have to write the number 
-in the program - and users can (in)put their own number.
+## الإدخال (Input)
 
-Just like you used `print`, we will now use a different *function*
-to capture user input:
-We will explain the details later, for now, just remember these:
+أخيرًا ، سنتعلم كيفية تحسين البرنامج حتى لا نضطر إلى كتابة الرقم
+في البرنامج - ويمكن للمستخدمين (إدخال) رقمهم الخاص.
 
-* If you want to retrieve **a text(string)** from the user, use:
+تمامًا كما استخدمت `print` ، سنستخدم الآن *دالة (function)* مختلفة
+لالتقاط إدخال المستخدم:
+سنشرح التفاصيل لاحقًا ، الآن ، فقط تذكر هذه:
 
+* إذا كنت تريد استرداد **نص (string)** من المستخدم ، فاستخدم:
   ```python
   variable = input('Enter some text: ')
   ```
 
-* If you want to retrieve **a whole number**, use:
+* إذا كنت تريد استرداد **رقم صحيح (whole number)** ، فاستخدم:
 
   ```python
   variable = int(input('Enter some whole number: '))
   ```
 
-* If you want to retrieve **a decimal**, use:
+* إذا كنت تريد استرداد **رقم عشري (decimal)** ، فاستخدم:
 
   ```python
   variable = float(input('Enter some decimal: '))
   ```
-The text inside the parentheses can be tailored according to your needs.
-It serves as the text prompt for the user, so use it to ask for any needed info.
+يمكن تخصيص النص الموجود داخل الأقواس وفقًا لاحتياجاتك.
+يُستخدم كنص مطالبة للمستخدم ، لذا استخدمه لطلب أي معلومات مطلوبة.
 
-And now try to put it all together: Ask user for a side of a square and use the variable as an input to the computation.
+والآن حاول جمع كل شيء معًا: اطلب من المستخدم جانبًا للمربع واستخدم المتغير كمدخل للحساب.
 
 {% filter solution %}
 

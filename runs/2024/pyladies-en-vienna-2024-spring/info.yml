@@ -66,27 +66,27 @@ plan:
     - lesson: beginners-en/lesson-1-homework
       type: homework
     - title: تمرين Google colab
-      url: https://drive.google.com/file/d/1KPlvbwGpIe8HQVkancKk6wuTwhV5VkRc
+      url: https://drive.google.com/file/d/1vjJpP9_PYsAfh4_e90x-NO4x1bbM5bd2
       type: cheatsheet
     - title: مُلخص اختصارات لوحة المفاتيح
       url: https://drive.google.com/file/d/1Bvnb52oirQDiZ7WI5t4Q8UeCd10-_gpT
       type: cheatsheet
 
-# - title: First Program, Print
-#   slug: hello
-#   date: 2024-12-29
-#   materials:
-#   - lesson: beginners-en/hello-world
-#   - lesson: beginners-en/print
-#   - lesson: beginners-en/variables
-#   - title: Basics cheatsheet
-#     url: https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc.pdf
-#     type: cheatsheet
-#   - title: VS Code Tips and tricks
-#     url: https://www.youtube.com/watch?v=fj2tuTIcUys
-#     type: cheatsheet
-#   - lesson: beginners-en/lesson-2-homework
-#     type: homework
+  - title: البرنامج الأول، (Print)
+    slug: hello
+    date: 2024-12-29
+    materials:
+    - lesson: beginners-en/hello-world
+    - lesson: beginners-en/print
+    - lesson: beginners-en/variables
+    - title: Basics cheatsheet
+      url: https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc.pdf
+      type: cheatsheet
+    - title: VS Code Tips and tricks
+      url: https://www.youtube.com/watch?v=fj2tuTIcUys
+      type: cheatsheet
+    - lesson: beginners-en/lesson-2-homework
+      type: homework
 
 # - title: Conditions, modules and functions
 #   slug: loops

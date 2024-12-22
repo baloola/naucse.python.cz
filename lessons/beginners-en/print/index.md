@@ -1,8 +1,7 @@
-# Print and errors
+# الطباعة والأخطاء (Print and errors)
 
-Create a file <code>~/pyladies/02/printing.py</code> (in the editor)
-and write the following commands:
-
+إنشئ ملفًا <code>sudan/02/printing.py/~</code> (في **محرر النصوص (editor)**)
+ واكتب الأوامر التالية:
 
 ```python
 print(1)
@@ -12,105 +11,104 @@ print(3 * 8)
 print(10 - 2.2)
 print(3 + (4 + 6) * 8 / 2 - 1)
 print('*' * 80)
-print("Hello" + " " + "PyLadies!")
+print("Hello" + " " + "sudan!")
 print("Sum of numbers 3 and 8 is", 3 + 8)
 print('Twinkle, twinkle, little star')
 print(How I wonder what you are.)
 ```
 
-Now run the program. Does it work?
+## الطباعة والأخطاء (Print and errors)
 
-## How to read error messages
+حاول تشغيل البرنامج الآن. هل يعمل؟
 
-You will often find out that the code you wrote isn't working on its first run.
-It's because the computer is not that smart and you have to write the commands in the exact way,
-according to the Python rules. Don't worry, it happens even to experienced programmers.
+## كيفية قراءة رسائل الخطأ (How to read error messages)
 
-The important thing is to know how to find out what is wrong. The error messages will help you with
-that. For example, after we run our program, it should print this:
+ستكتشف في كثير من الأحيان أن الكود الذي تكتبه لا يعمل في التشغيل الأول.
+هذا لأن الكمبيوتر ليس ذكيًا جدًا وعليك كتابة الأوامر بالطريقة الصحيحة تمامًا ،
+وفقًا لقواعد Python. لا تقلق ، يحدث ذلك حتى للمبرمجين المتمرسين.
 
-<pre>
-  File "<span class="plhome">~/pyladies</span>/02/printing.py", line <span class="err-lineno">11</span>
+الأمر المهم هو معرفة كيفية اكتشاف الخطأ. ستساعدك رسائل الخطأ في ذلك.
+على سبيل المثال ، بعد تشغيل برنامجنا ، يجب أن يطبع هذا:
+
+<pre dir="ltr">
+  File "<span class="plhome">~/sudan</span>/02/printing.py", line <span class="err-lineno">11</span>
     print(How I wonder what you are.)
                ^
 <span class="err-exctype">SyntaxError</span>: invalid syntax
 </pre>
 
-First, Python prints the name of the file and <span class="err-lineno">line number</span>,
-where the error is.
-Then it prints the whole line with the mistake.
-And finally the <span class="err-exctype">error type</span>
-(in our case it's `"SyntaxError"`) and eventually some more info.
+أولاً ، يطبع Python اسم الملف و <span class="err-lineno">رقم السطر</span> ،
+حيث يوجد الخطأ.
+ثم يطبع السطر بأكمله مع الخطأ.
+وأخيرا <span class="err-exctype">نوع الخطأ</span>
+(في حالتنا هو "SyntaxError") وربما بعض المعلومات الأخرى.
 
-> [note] How is this error different from the one that happens when you
-> try to add up a number and text? Or when you try to divide by zero?
+> [note] كيف يختلف هذا الخطأ عن الخطأ الذي يحدث عند محاولة جمع رقم ونص؟
+> أو عندما تحاول القسمة على صفر؟
 
-Error messages can be hard to understand in the beginning, but
-you will get used to them with practice.
+قد يصعب فهم رسائل الخطأ في البداية ، ولكنك ستعتاد عليها مع الممارسة.
 
-For now, the important thing for you will be the line number.
-When you know that the mistake is on line <span class="err-lineno">11</span>,
-you can look at that line and try to find it.
+في الوقت الحالي ، سيكون الشيء المهم بالنسبة لك هو رقم السطر.
+عندما تعرف أن الخطأ موجود في السطر <span class="err-lineno">11</span> ،
+يمكنك إلقاء نظرة على هذا السطر ومحاولة العثور عليه.
 
-When you can't find it there, it can also be a few lines above or below.
-Python sometimes doesn't share human views where the mistake actually *is*
-and it shows you where it *noticed* the mistake.
+عندما لا يمكنك العثور عليه هناك ، فقد يكون أيضًا في بضعة أسطر أعلى أو أسفل.
+في بعض الأحيان لا يشارك Python وجهات النظر البشرية حيث يكون الخطأ بالفعل *
+ويظهر لك المكان الذي *لاحظ فيه* الخطأ.
 
-In our case the mistake is that we don't have quotation marks around
-the string. So add them there and run the program again.
+في حالتنا ، يكون الخطأ هو أن ليس لدينا علامات اقتباس حول السلسلة.
+لذلك أضفها هناك وشغّل البرنامج مرة أخرى.
 
-If it works, **congratulations**!
-If not, try to correct the program and repeat until it works :)
+إذا نجح ، **مبروك**!
+إذا لم يكن كذلك ، حاول تصحيح البرنامج وكرر حتى يعمل :)
 
-If you are still in doubt, please ask a mentor for help!
+إذا كنت لا تزال تشك ، فيرجى طلب المساعدة من معلم!
 
-## How the program works
+## كيفية عمل البرنامج (How the program works)
 
-Now that our program works we can take a closer look at what is happening
-when it's running.
+الآن بعد أن يعمل برنامجنا ، يمكننا إلقاء نظرة فاحصة على ما يحدث
+عندما يعمل.
 
-It's quite simple: Commands are performed **one after the other from top to bottom**.
-The program is like a cooking recipe: a list of instructions that tells you what to do.
+إنه بسيط للغاية: يتم تنفيذ الأوامر **واحدة تلو الأخرى من أعلى إلى أسفل**.
+البرنامج مثل وصفة الطهي: قائمة تعليمات تخبرك بما يجب عليك فعله.
 
-Soon your programs will look more like a sorcerer's potion
-(*wait for the full moon and if Mars is in conjunction with
-Jupiter then stir three times*) but the principle is still
-the same: the computer reads the commands from top to bottom
-and performs them one after the other.
+قريباً ستبدو برامجك أكثر شبهاً بجرعة الساحر
+(*انتظر اكتمال القمر وإذا كان المريخ متصلاً بالمشتري
+ثم حرك ثلاث مرات*) ولكن المبدأ لا يزال هو نفسه: يقرأ الكمبيوتر
+الأوامر من أعلى إلى أسفل وينفذها واحدة تلو الأخرى.
 
-## Print and expressions
+## الطباعة التعبيرات (Print and expressions)
 
-And which instructions make up our "recipe"?
+وما هي التعليمات التي تشكل "وصفتنا"؟
 
-That `print` which we use is a *function*. We will talk
-about functions later, now all you need to know is that
-if you type `print` and after that, in parentheses, some
-*expressions* separated by comma, the values of those
-expressions will be printed.
+هذا `print` الذي نستخدمه هو *دالة*. سنتحدث
+عن الوظائف لاحقًا ، والآن كل ما تحتاج إلى معرفته هو أنه
+إذا كتبت `print` وبعد ذلك ، بين قوسين ، بعض
+* التعبيرات * مفصولة بفواصل ، سيتم طباعة قيم تلك التعبيرات.
 
-And what are those expressions?
-You have some examples in our code:
-An expression can be a number, a string, or some (e.g. mathematical)
-operations composed of multiple expressions.
-For example the expression `3 + 8` will add up `3` and `8`.
+وماذا تعني هذه التعبيرات؟
+لديك بعض الأمثلة في الكود الخاص بنا:
+يمكن أن يكون التعبير رقمًا أو سلسلة أو بعض العمليات (على سبيل المثال الحسابية)
+يتكون من تعبيرات متعددة.
+على سبيل المثال ، سيضيف التعبير `3 + 8` `3` و `8`.
 
-We will focus on expressions and their values more in
-the lesson about [variables]({{ lesson_url('beginners-en/variables') }}).
+سنركز أكثر على التعبيرات وقيمها في
+درس حول [variables]({{ lesson_url('beginners-en/variables') }}).
 
-> [style-note] Typography
+> [style-note] الطباعة
 >
-> Notice that there are no spaces around
-> the parentheses:
+> لاحظ أنه لا توجد مسافات حول
+> الأقواس:
 > ```python
 > print("Hello!")
 > ```
 >
-> We can write a space after a comma, but not before:
+> يمكننا كتابة مسافة بعد الفاصلة ، ولكن ليس من قبل:
 > ```python
 > print(1, 2, 3)
 > ```
 >
-> You should also write spaces around mathematical operators:
+> يجب عليك أيضًا كتابة مسافات حول العوامل الرياضية:
 > ```python
 > print(2 + 8)
 > print("One and a half is ", 1 + 1/2)

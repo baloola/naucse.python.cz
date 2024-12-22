@@ -1,21 +1,22 @@
-# My First Program
+# أول برنامج  (My First Program)
 
 ```pycon
 >>> 3 + 4
 7
 ```
+يمكنك إصدار الأوامر في **وحدة تحكم بايثون التفاعلية (Python interactive console)**.
+ولكن لها عيب:
+يفقد البرنامج الذي تكتبه عند انتهاء الجلسة.
+إنه جيد لتجربة الأوامر البسيطة.
+ومع ذلك ، غالبًا ما تحتاج إلى طريقة لحفظ البرامج الأكثر تعقيدًا في مكان ما.
 
-You can issue commands in the *Python interactive console*. 
-But it has a disadvantage:
-The program that you type is lost when the session ends.
-It is good for trying simple commands. 
-Very often however, you need a way to save more complex programs somewhere. 
+افتح **محرر النصوص (editor)** الخاص بك
+(يجب أن يكون لديك **محرر نصوص (editor)** مثبتًا. إذا لم يكن كذلك ، اتبع التعليمات الموجودة في
+[تثبيت المحرر (editor)]({{ lesson_url('beginners-en/install-editor')}}).)
 
-Open your editor
-(You should have an editor installed. If not, follow the instructions in 
-[Editor installation]({{ lesson_url('beginners-en/install-editor')}}).)
+أنشئ ملفًا جديدًا في **محرر النصوص (editor)** واكتب ال code التالي:
 
-Create a new file in your editor and type the following code:
+
 
 ```python
 print("Hello world!")
@@ -27,68 +28,70 @@ print("Hello world!")
 {% set rootname = 'naucse-python' %}
 {%- endif %}
 
-Then save the file as `hello.py`.
-* You have to create the subdirectory named `02` in the `pyladies`
-(or whatever folder name you've created last lecture) directory.
-* Then you can store the file as `hello.py` in it.
+## حفظ الملف
 
-If you can choose the *encoding* in your editor, you should use `UTF-8`.
-If you can choose the file type, use `.py` or `All Formats`.
+ثم احفظ الملف باسم `hello.py`.
+* يجب عليك إنشاء **المجلد الفرعي (Subdirectory)** المسمى `02` في **المجلد (Directory)** `sudan`
+(أو أي اسم مجلد قمت بإنشائه في المحاضرة الأخيرة).
+* ثم يمكنك تخزين الملف باسم `hello.py` فيه.
 
-Some operating systems or editors hide extensions or add their own extensions.
-You can check the real name using the command line.
-Open your command line and change your current directory to the subdirectory you created -
-for example by using the `cd` command to `~/pyladies/02`.
+إذا كان بإمكانك اختيار *ترميز الأحرف (encoding)* في **محرر النصوص (editor)** الخاص بك ، فيجب عليك استخدام `UTF-8`.
+إذا كان بإمكانك اختيار نوع الملف ، فاستخدم `.py` أو `All Formats`.
 
-List what is in the directory using the command `ls` (Mac or Linux) or `dir` (Windows) 
-and check that the filename is really `hello.py` and not, for example, `hello.py.txt`.
+قد تخفي بعض أنظمة التشغيل أو **محرري النصوص (Editors)** الامتدادات أو تضيف امتداداتها الخاصة.
+يمكنك التحقق من الاسم الحقيقي باستخدام **سطر الأوامر (Command Line)**.
+افتح **سطر الأوامر (Command Line)** وقم بتغيير **المجلد (Directory)** الحالي إلى **المجلد الفرعي (Subdirectory)** الذي قمت بإنشائه -
+على سبيل المثال باستخدام الأمر `cd` إلى `sudan/02/~`.
 
-## Executing Your Program
+قم بإدراج ما يوجد في **المجلد (Directory)** باستخدام الأمر `ls` (Mac أو Linux) أو `dir` (Windows)
+وتحقق مما إذا كان اسم الملف هو بالفعل `hello.py` وليس ، على سبيل المثال ، `hello.py.txt`.
 
-Open the command line.
-Change to the `~/pyladies/02` directory and issue the following command:
+## تنفيذ برنامجك
+
+افتح **سطر الأوامر (Command Line)**.
+انتقل إلى **المجلد (Directory)** `sudan/02/~` وأصدر الأمر التالي:
 
 ```console
 python3 hello.py
 ```
 
 > [note]
-> You have learned about the command line in 
-> a [previous lesson]({{ lesson_url('beginners-en/cmdline')}}) which shows how to change the current directory 
-> using the `cd` command.
+> لقد تعلمت عن **سطر الأوامر (Command Line)** في
+> [درس سابق]({{ lesson_url('beginners-en/cmdline')}}) والذي يُظهر كيفية تغيير **المجلد (Directory)** الحالي
+> باستخدام الأمر `cd`.
 
 
-After you run `python3 hello.py` you should see the program responding with writing `Hello world!` into the terminal.
+بعد تشغيل `python3 hello.py` يجب أن ترى البرنامج يستجيب بكتابة `Hello world!` في **المحطة  (terminal)**.
 
-If it does not work, make sure that:
+إذا لم يعمل ، فتأكد من:
 
-* You are in the correct directory: `~/pyladies/02`
-  (you need to replace `~/pyladies` with the directory that you have created previously).
-* The `hello.py` file contains the correct command, including quotes and parentheses.
-* Do not type `$` or `>` character in the command line – it is there to indicate that this is a command line.
-  It is printed by the operating system after any program has finished.
-  You should type only: `python3 hello.py`.
+* أنك في **المجلد (Directory)** الصحيح: `sudan/02/~`
+  (تحتاج إلى استبدال `sudan/~` بـ **المجلد (Directory)** الذي قمت بإنشائه سابقًا).
+* يحتوي ملف `hello.py` على الأمر الصحيح ، بما في ذلك الاقتباسات والأقواس.
+* لا تكتب حرف `$` أو `<` في **سطر الأوامر (Command Line)** - فهو موجود للإشارة إلى أن هذا هو **سطر الأوامر (Command Line)**.
+  يتم طباعته بواسطة نظام التشغيل بعد انتهاء أي برنامج.
+  يجب عليك فقط كتابة: `python3 hello.py`.
 
-If it still does not work, **ask your coach for help!**
+إذا لم يعمل ، **اطلب المساعدة من مدربك!**
 
 
-> [style-note] Note about code style
+> [style-note] ملاحظة حول أسلوب الكتابة
 >
-> It does not usually matter where you use space in Python inside a command. 
-> The command `print("Hello world!")` has the same effect as:
+> عادةً لا يهم مكان استخدام المسافة في Python داخل الأمر.
+> الأمر `print("Hello world!")` له نفس تأثير:
 >
 > ```python
 > print      (   "Hello world!"     )
 > ```
 >
-> It is however a good practice to follow some typical guidelines.
-> In English, we do not write a space after an opening parenthesis.
-> In Python, we do not write a space even between `print` and `(`.
-> The recommended style is:
+> ومع ذلك ، من الجيد اتباع بعض الإرشادات النموذجية.
+> في اللغة الإنجليزية ، لا نكتب مسافة بعد القوس الافتتاحي.
+> في Python ، لا نكتب مسافة حتى بين `print` و `(`.
+> الأسلوب الموصى به هو:
 >
 > ```python
 > print("Hello world!")
 > ```
 >
-> The spaces between the quotes have a meaning: If you type
-> `"    Hello      world!"`, then the extra spaces are printed.
+> المسافات بين الاقتباسات لها معنى: إذا قمت بكتابة
+> `"    Hello      world!"` ، فسيتم طباعة المسافات الإضافية.
