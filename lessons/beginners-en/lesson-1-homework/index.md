@@ -22,4 +22,4 @@
 5. ماذا عن ضرب string في رقم؟ هل يمكن أن يعمل هذا؟ `'Ha' * 10`
 
 
-يمكنك العثور على البرنامج التعليمي الخاص بنا حول كيفية استخدام Google Colab وكيفية استخدامه لتقديم الواجبات المنزلية هنا: [تمرين Google colab](//drive.google.com/file/d/1KPlvbwGpIe8HQVkancKk6wuTwhV5VkRc/view).
+يمكنك العثور على البرنامج التعليمي الخاص بنا حول كيفية استخدام Google Colab وكيفية استخدامه لتقديم الواجبات المنزلية هنا: [تمرين Google colab](//drive.google.com/file/d/1vjJpP9_PYsAfh4_e90x-NO4x1bbM5bd2/view).

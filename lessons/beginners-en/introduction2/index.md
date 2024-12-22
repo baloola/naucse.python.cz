@@ -32,7 +32,7 @@
 
 نفضل أن يتم تنفيذ جميع الواجبات المنزلية عبر Google Collab، وهي واجهة دفتر ملاحظات برمجة Python عبر الإنترنت مع خيارات المشاركة.
 
-يمكنك العثور على البرنامج التعليمي الخاص بنا هنا: [برنامج Google Colab التعليمي](https://drive.google.com/file/d/1KPlvbwGpIe8HQVkancKk6wuTwhV5VkRc/view).
+يمكنك العثور على البرنامج التعليمي الخاص بنا هنا: [برنامج Google Colab التعليمي](https://drive.google.com/file/d/1vjJpP9_PYsAfh4_e90x-NO4x1bbM5bd2/view).
 
 ستسمح هذه الأداة للموجهين بتقديم ملاحظات أفضل.
 
