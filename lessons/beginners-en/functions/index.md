@@ -1,12 +1,12 @@
 
 
-If you would like to do some calculations with the number π (pi), how would you write it?
-3.14159265 ?
+إذا كنت ترغب في إجراء بعض الحسابات باستخدام الرقم π (pi) ، كيف ستكتبه؟
+3.14159265 ؟
 
-Python has a lot of built-in features. You don’t have to reinvent the wheel,
-you just have to know where to look.
+يحتوي Python على العديد من الخصائص المبنية مسبقا. لا تحتاج إلى إعادة العملية كل مرة ،
+ما عليك سوى معرفة مكان البحث.
 
-We can access *π* by importing the `math` module.
+يمكننا الوصول إلى *π* عن طريق استيراد (import) مكتبة (module) `math`.
 
 
 ```python
@@ -15,27 +15,23 @@ from math import pi
 print(pi)
 ```
 
-As you can see, π is a bit hidden. Compared to `print` or `if`, which everyone needs, 
-not everyone needs `math`. Let's stick with this module for a bit longer.
+كما ترى ، فإن π مخفي بعض الشيء. مقارنةً بـ `print` أو `if` ، والتي يحتاجها الجميع ،
+لا يحتاج الجميع إلى `math`. دعونا نكتفي بهذه االمكتبة (module) لفترة أطول قليلاً.
+## التعبيرات (Expressions)
 
-
-## Expressions
-
-In mathematics we have a lot of different operations that are implemented as 
-symbols, like + or -. The same symbols are used in Python.
+في الرياضيات ، لدينا العديد من العمليات المختلفة التي يتم تنفيذها كرموز ، مثل + أو -. يتم استخدام نفس الرموز في Python.
 
 * 3 + 4
 * <var>a</var> - <var>b</var>
 
-It's a bit difficult with multiplying and dividing
-because you can't write the usual mathematical expression
-on your keyboard:
+يصعب الأمر قليلاً مع الضرب والقسمة لأنه لا يمكنك كتابة تعبير رياضي معتاد
+على لوحة المفاتيح الخاصة بك:
 
 * 3 · 4
 * ¾
 
-Mathematicians were inventing more and more complex symbols 
-that cannot be just as easily replicated by programmers:
+اخترع علماء الرياضيات المزيد والمزيد من الرموز المعقدة
+والتي لا يمكن بسهولة نسخها بواسطة المبرمجين:
 
 
 * <var>x</var>²
@@ -47,22 +43,20 @@ that cannot be just as easily replicated by programmers:
 * <var>a</var> ★ <var>b</var>
 * <var>a</var> ⨁ <var>b</var>
 
-There are even programming languages that need a
-special keyboard. But their programs can't be easily 
-written and they aren't readable.
+هناك حتى لغات برمجة تحتاج إلى لوحة مفاتيح خاصة. لأن برامجهم لا يمكن كتابتها بسهولة
+وهي غير قابلة للقراءة.
 
 > [note]
-> For example this is program written in language APL:
+> على سبيل المثال ، هذا برنامج مكتوب بلغة APL:
 >
-> <!--z http://catpad.net/michael/apl/ -->
->
+> >
 >     ⍎’⎕’,∈Nρ⊂S←’←⎕←(3=T)∨M∧2=T←⊃+/(V⌽”⊂M),(V⊖”⊂M),(V,⌽V)⌽”(V,V←1¯1)⊖”⊂M’
 
 
-There are relatively few operators in Python.
-And we already know almost half of them!
-Some operators are words.
-Here are all of them:
+هناك عدد قليل نسبيًا من المشغلات (operators) في Python.
+وقد عرفنا بالفعل نصفهم تقريبًا!
+بعض المشغلات عبارة عن كلمات.
+إليك جميعها:
 
 <div>
     <code>==</code> <code>!=</code>
@@ -89,26 +83,26 @@ Here are all of them:
     <code class="muted">is</code> <code class="muted">is not</code>
 </div>
 
-It is clear now that some operations that we want to do in a program 
-cannot be expressed by these operators.
+من الواضح الآن أن بعض العمليات التي نريد القيام بها في البرنامج
+لا يمكن التعبير عنها بواسطة هذه المشغلات (operators).
 
-How to deal with this?
+كيف تتعامل مع هذا؟
 
-One way which we have already mentioned is to define the operation in words.
+إحدى الطرق التي ذكرناها بالفعل هي تعريف العملية بالكلمات.
 
 * <var>x</var> = sin <var>a</var>
 
-And we can write that on our keyboards!
-We just have to add parentheses (some editors will do that for us) to make it 
-clear to what the operation applies:
+ويمكننا كتابة ذلك على لوحات المفاتيح الخاصة بنا!
+علينا فقط إضافة أقواس (احيانا يقوم المحرر (editor) بذلك نيابة عنا) لجعلها
+واضح لما تطبق العملية:
 
 ```python
 x = sin(a)
 ```
 
-But first of all you have to *import* `sin`,
-in the same way as you already imported `pi`.
-So the whole program will look like this:
+ولكن أولاً وقبل كل شيء ، يجب عليك *استيراد (import)* `sin` ،
+بنفس الطريقة التي استوردت بها `pi` بالفعل.
+لذلك سيبدو البرنامج الكامل على النحو التالي:
 
 ```python
 from math import sin
@@ -117,32 +111,30 @@ x = sin(1)  # (in radian)
 print(x)
 ```
 
-> [warning] Import and files names
-> When we want to import modules, we have to pay extra attention
-> how we name our own program files.
-> If you import the module `math` into your program, your file can't
-> have name `math.py` itself.
+> [warning] استيراد الملفات و اسمائها (Import and files names)
 >
-> Why? Because if you are importing a module, Python will look first
-> into the folder from which you are running the program.
-> It will find the file `math.py` and will try to import the `sin` function from there.
-> And of course it won't find it.
+> عندما نريد استيراد (import) المكتبات ، يتعين علينا الانتباه بشكل إضافي
+> كيف نسمي ملفات البرنامج الخاصة بنا.
+> إذا قمت باستيراد الوحدة `math` إلى برنامجك ، فلا يمكن أن يكون لملفك اسم `math.py` نفسه.
+>
+> لماذا؟ لأنه إذا كنت تستورد وحدة ، فسيبحث Python أولاً
+> في المجلد الذي تقوم بتشغيل البرنامج منه.
+> سيجد الملف `math.py` وسيحاول استيراد دالة `sin` من هناك.
+> وبالطبع لن يجدها.
 
 
-## Call functions
+## استدعاء الدوال (Call functions)
 
-We call the function by its *name*.
+نستدعي الدالة (function) حسب *اسمها*.
 
-The name looks like a variable -– actually, it *is* a variable, the
-only difference is that instead of a number or a string, we have a function stored inside.
+يبدو الاسم وكأنه متغير (variable) - في الواقع ، إنه *متغير (variable)* ، الفرق الوحيد هو أنه بدلاً من رقم أو سلسلة ،
+لدينا دالة (function) مخزنة في الداخل.
 
-After the name of the function, we have parentheses where we enclose the *argument* 
-(or *input*) for the function. This is the information which our function will work with.
-In our example, `sin()` will calculate the <em>sine</em>
+بعد اسم الدالة (function) ، لدينا أقواس نضع فيها *الوسيطة*
+(أو *الإدخال*) للدالة (function). هذه هي المعلومات التي ستعمل بها وظيفتنا.
+في مثالنا ، ستقوم `()sin` بحساب <em>الجيب</em>
 
-The *return value* of a function is a value that can be
-assigned to a variable.
-
+*القيمة المرجعة* للدالة (function) هي قيمة يمكن تعيينها إلى متغير.
 
 ```
         function name
@@ -152,34 +144,34 @@ assigned to a variable.
             ▲      ╰┬╯
             │     argument
             │
-            ╰── return value 
+            ╰── return value
 ```
 
-Or we can use it in other operations:
+يمكننا ايضا استخدامها في عملية حسابية:
 
 ```python
 a = sin(1) + cos(2)
 ```
 
-Or we can use it in an `if` condition:
+او من الممكن استخدامها كشرط تحت `if`:
 
 ```python
 if sin(1) < 3:
 ```
 
-Or, even use it as an input for a different function:
+او حتى استخدامها كقيمة داخل دالة (function) اخرى :
 
 ```python
 print(sin(1))
 ```
 
-… etc.
+و هكذا
 
 
-### Arguments
+### القيم (Arguments)
 
-To some functions, we can pass multiple arguments. An example is `print`, 
-which prints all its arguments consecutively. We separate the arguments by comma:
+يمكننا تمرير عدة قيم (Arguments) إلى بعض الدوال. مثال على ذلك هي `print` ،
+التي تطبع جميع القيم المدخلة اليها على التوالي. نفصل بين القيم بفاصلة:
 
 ```python
 print(1, 2, 3)
@@ -188,25 +180,23 @@ print(1, 2, 3)
 ```python
 print("One plus two equals", 1 + 2)
 ```
-Some functions do not need any argument, the function `print` is again an example for this. 
-But we still have to write the parentheses, even if they are empty.
-Guess what `print` without arguments will do?
+بعض الدوال لا تحتاج إلى أي قيمة ، والدالة print هي مثال آخر على ذلك.
+ولكن لا يزال يتعين علينا كتابة الأقواس ، حتى لو كانت فارغة. خمن ماذا ستفعل print بدون قيم؟
 
 ```python
 print()
 ```
 
 {% filter solution %}
-The function `print` without arguments will print an empty line.
+ستقوم الدالة print بدون قيم بطباعة سطر فارغ.
 
-It's exactly following the definition -- the function `print` will write all
-its arguments on a line.
+يتبع ذلك التعريف تمامًا - ستكتب الدالة print كل
+قيمها على سطر.
 {% endfilter %}
 
-### Functions have to be called
-
-Be careful to write the parentheses, otherwise, the function is not called. 
-You will not get the return value, but the function itself! Let’s try the following examples:
+عند استدعاء الدوال (Call functions)
+كن حذرًا عند كتابة الأقواس ، وإلا فلن يتم استدعاء الدالة.
+لن تحصل على قيمة الإرجاع ، ولكن الدالة نفسها! دعنا نجرب الأمثلة التالية:
 
 ```python
 from math import sin
@@ -215,18 +205,19 @@ print(sin)
 print(sin + 1)
 ```
 
-### Named arguments
+### القيم المسماة مسبقا (Named arguments)
 
-Some functions can also work with *named* arguments. 
-They are written similarly to the assignment of a variable, with an equals sign, 
-but inside the parentheses:
+يمكن لبعض الوظائف أيضًا العمل مع القيم *المسماة مسبقا*.
+يتم كتابتها بطريقة مشابهة لإسناد متغير ، باستخدام علامة مساواة ،
+ولكن داخل الأقواس:
 
-For example, the function `print` ends with printing a newline character at the end of a line by default,
-but we can change that by using the named argument `end`, and print something else.
+على سبيل المثال ، تنتهي وظيفة `print` بطباعة حرف سطر جديد في نهاية السطر بشكل افتراضي ،
+ولكن يمكننا تغيير ذلك باستخدام القيمة المسماة `end` ، وطباعة شيء آخر.
 
 > [note]
-> We have to write this into a .py file to run it because we won't
-> be able to see it properly in the interactive console.
+> يتعين علينا كتابة هذا في ملف .py لتشغيله لأننا لن نتمكن من ذلك
+> لرؤيتها بشكل صحيح في لوحة التحكم التفاعلية.
+
 
 ```python
 print('1 + 2', end=' ')
@@ -235,24 +226,24 @@ print(1 + 2, end='!')
 print()
 ```
 
-## Useful functions
+## دوال مفيدة (Useful functions)
 
-At last, we will look at some basic functions which are built in.
-You can also download this 
-<a href="https://github.com/muzikovam/cheatsheets/blob/master/basic-functions/basic-functions-en.pdf">cheatsheet</a>.
+أخيرًا ، سنلقي نظرة على بعض الدوال الأساسية المضمنة.
+يمكنك أيضًا تنزيل ورقة الغش هذه
+<a href="https://github.com/muzikovam/cheatsheets/blob/master/basic_functions/basic_functions-en.pdf">cheatsheet</a>.
 
 
-### Input and output
+### المدخلات والمخرجات (Input and output)
 
-We already know these functions.
-`print` writes non-named arguments separated by spaces into the output.
-It will write a named argument `end` in the end of a line (the default is a newline character).
-And another named argument `sep` defines what will be written between each argument (default is a space character).
+نحن نعرف هذه الدوال بالفعل.
+تقوم `print` بكتابة القيم غير المسماة والمفصولة بمسافات في الإخراج.
+سيقوم بكتابة قيمة مسماة `end` في نهاية السطر (الافتراضي (default) هو سطر جديد).
+وقيمة مسماة أخرى `sep` تحدد ما سيتم كتابته بين كل قيمة (الافتراضي (default) هو مسافة).
 
 
 > [note]
-> We recommend to run the following example
-> from a file, not from the Python console.
+> نوصي بتشغيل المثال التالي
+> من ملف ، وليس من وحدة تحكم Python.
 
 ```python
 print(1, "two", False)
@@ -260,26 +251,27 @@ print(1, end=" ")
 print(2, 3, 4, sep=", ")
 ```
 
-The basic function for input is obviously `input`.
-It will print the question (or whatever you type in),
-collect the input from the user, and return it
-as a string.
+
+**الدالة الأساسية للإدخال هي `input` بشكل واضح.**
+ستقوم بطباعة السؤال (أو أي شيء تكتبه) ،
+جمع الإدخال من المستخدم ، وإعادته
+كـ نص (string).
 
 ```python
 input('Enter input: ')
 ```
 
-### Type conversion (type casting)
+### تحويل النوع (Type casting)
 
-In case we don’t want to work just with strings, here is a group of 
-functions that can convert strings to numbers and back.
-But what to do when we don't won't to work with a string but, for example, with a number?
-There's a group of functions that can help us convert strings to numbers and back.
-Each of the three <em>types</em> of variables that we currently know
-has a function which takes a value (as an argument) and returns it as a
-value of its own type. 
-For *integers* there's the function `int()`, for *floating points* there's
-`float`, and for *strings* there's `str()`.
+في حالة عدم رغبتنا في العمل فقط مع النصوص ، فهناك مجموعة من
+الدوال التي يمكنها تحويل النصوص إلى أرقام والعكس صحيح.
+ولكن ماذا تفعل عندما لا تريد العمل مع نص ولكن ، على سبيل المثال ، مع رقم؟
+هناك مجموعة من الدوال التي يمكن أن تساعدنا في تحويل النصوص إلى أرقام والعكس صحيح.
+كل واحد من الأنواع الثلاثة *للمتغيرات* التي نعرفها حاليًا
+لديه دالة تأخذ قيمة  وتعيدها كـ
+قيمة من نوعها الخاص.
+بالنسبة إلى *الأعداد الصحيحة* ، توجد الدالة `()int` ، وبالنسبة إلى *الأعداد العشرية* ، هناك
+`float` ، وبالنسبة إلى *النصوص* ، هناك `()str`.
 
 
 ```python
@@ -288,7 +280,7 @@ float(x)            # conversion to real number
 str(x)              # conversion to string
 ```
 
-Examples:
+امثلة:
 
 ```python
 3 == int('3') == int(3.0) == int(3.141) == int(3)
@@ -297,7 +289,7 @@ Examples:
 '3' == str(3) == str('3')
 '3.141' == str(3.141) == str('3.141')
 ```
-But not all conversions are possible:
+ولكن ليست كل التحويلات ممكنة:
 
 ```python
 int('blablabla')    # error!
@@ -305,21 +297,21 @@ float('blablabla')  # error!
 int('8.9')          # error!
 ```
 
-We will tell you how to deal with errors at some other time.
+سنخبرك بكيفية التعامل مع الأخطاء في وقت آخر.
 
 
-### Mathematical functions
+### الدوال الرياضية (Mathematical functions)
 
-Maths is sometimes useful so let's have a look how to work 
-with numbers in Python :)
+الرياضيات مفيدة في بعض الأحيان لذلك دعونا نلقي نظرة على كيفية العمل
+مع الأرقام في Python (:
 
-There is one mathematical function which is always available:
+هناك دالة رياضية واحدة متاحة دائمًا:
 
 ```python
 round(number)    # rounding
 ```
 
-Lots of others are imported from the `math` module:
+يتم استيراد الكثير من الدوال الأخرى من مكتبة(module) `math` :
 
 ```python
 from math import sin, cos, tan, sqrt, floor, ceil
@@ -333,28 +325,26 @@ floor(angle)    # rounding down
 ceil(angle)     # rounding up
 ```
 
-### Help
+### المساعدة (Help)
 
-There are some more functions that help programmers:
-You can get help regarding a specific function from the program 
-itself (or Python console) by using the help function.
-It's sometimes useful even for beginners, but if
-not - use Google.
+هناك بعض الدوال الأخرى التي تساعد المبرمجين:
+يمكنك الحصول على مساعدة حول دالة معينة من البرنامج نفسه
+(أو وحدة تحكم (console) Python) باستخدام دالة المساعدة (help function).
+غالبًا ما يكون مفيدًا حتى للمبتدئين ، ولكن إذا لم يكن كذلك - فاستخدم Google.
 
-Help will be shown, depending on your operating system,
-either in the browser or right there in the terminal.
-If the help is too long for the terminal, you can browse pages using
- (<kbd>↑</kbd>, <kbd>↓</kbd>,
-<kbd>PgUp</kbd>, <kbd>PgDn</kbd>) and you can get "out" by pressing the
-key <kbd>Q</kbd> (like *Quit*).
+سيتم عرض المساعدة ، حسب نظام التشغيل الخاص بك ،
+إما في المتصفح أو مباشرة في المحطة (terminal).
+إذا كانت المساعدة طويلة جدًا بالنسبة للمحطة(terminal) ، فيمكنك استعراض الصفحات باستخدام
+  (<kbd>↑</kbd>, <kbd>↓</kbd>,
+<kbd>PgUp</kbd>, <kbd>PgDn</kbd>) ويمكنك الخروج من خلال الضغط على المفتاح <kbd>Q</kbd> (مثل *إنهاء*).
 
-You can get help for <code>print</code> like that:
+يمكنك الحصول على مساعدة لـ `print` مثلا هكذا:
 
 ```python
 help(print)
 ```
 
-You can also get help for a whole module:.
+يمكنك أيضًا الحصول على المساعدة للمكتبة (module) بأكملها:
 
 ```python
 import math
@@ -364,8 +354,8 @@ help(math)
 
 ### Random
 
-Last but not least, we will look at two functions from
-`random` which are very useful for games.
+أخيرًا وليس آخرًا ، سنلقي نظرة على دالتين من
+`random` مفيدة جدًا للألعاب.
 
 ```python
 from random import randrange, uniform
@@ -374,9 +364,9 @@ randrange(a, b)   # random integer from a to b-1
 uniform(a, b)     # random float from a to b
 ```
 
-Beware that the <code>randrange(a, b)</code> never returns <code>b</code>. 
-If we need to randomly choose between 3 options, use <code>randrange(0,3)</code> 
-which returns <code>0</code>, <code>1</code>, or <code>2</code>:
+احذر من أن <code>randrange(a, b)</code> لا ترجع القيمة `b` أبدًا.
+عندما نحتاج إلى الاختيار بشكل عشوائي بين 3 خيارات ، فاننا نستخدم `randrange(0,3)`
+الذي يقترح <code>0</code> أو <code>1</code> أو <code>2</code>:
 
 
 ```python
@@ -392,13 +382,13 @@ else:  # 2
 ```
 
 > [note]
-> Remember that when you want to import the `random` module, you can't 
-> name your own file `random.py`.
+> تذكر أنه عندما تريد استيرادالمكتبة `random` ، لا يمكنك تسمية ملفك الخاص `random.py`.
 
 
-### And more...
-There are a lot more functions within Python itself,
-although you probably won't understand them at the beginning.
-All of them are in the Python documentation, e.g.:
-<a href="https://docs.python.org/3/library/functions.html">built-in</a>,
-<a href="https://docs.python.org/3/library/math.html">maths</a>.
+### والمزيد
+
+هناك العديد من الدوال الأخرى المضمنة في بايثون نفسها ،
+على الرغم من أنك ربما لا تفهمها في البداية.
+يمكن العثور عليها جميعًا في وثائق Python ، على سبيل المثال:
+<a href="https://docs.python.org/3/library/functions.html">الدوال المضمنة</a>,
+<a href="https://docs.python.org/3/library/math.html">مكتبة الرياضيات</a>.

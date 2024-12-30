@@ -1,73 +1,72 @@
-# Comparisons
+# المقارنات (Comparisons)
 
-Do you still remember what an <em>operator</em> is?
+هل لا تزال تتذكر ما هو **المشغل (operator)**؟
 
-In our homework, we learned some basic arithmetic operators.
-If we add one more basic operator (`//` for integer division), our list will look like this:
+في واجباتنا المنزلية ، تعلمنا بعض مشغلات الحساب الأساسية.
+إذا أضفنا مشغل (operator) أساسي واحد آخر (`//` للقسمة الصحيحة) ، فستبدو قائمتنا كما يلي:
 
 <table class="table">
     <tr>
-        <th>Symbol</th>
-        <th>Example</th>
-        <th>Description</th>
+        <th>الرمز</th>
+        <th>مثال</th>
+        <th>وصف</th>
     </tr>
     <tr>
         <td><code>+</code>, <code>-</code>, <code>*</code>, <code>/</code></td>
         <td><code>1 + 1</code></td>
-        <td>Basic arithmetic</td>
+        <td>حساب أساسي</td>
     </tr>
     <tr>
         <td><code>-</code></td>
         <td><code>-5</code></td>
-        <td>Negation</td>
+        <td>النفي (negation)</td>
     </tr>
     <tr>
         <td><code>//</code>; <code>%</code></td>
         <td><code>7 // 2</code>; <code>7 % 2</code></td>
-        <td>Integer division, remainder of division</td>
+        <td>القسمة الصحيحة ، الباقي من القسمة</td>
     </tr>
     <tr>
         <td><code>**</code></td>
         <td><code>3 ** 2</code></td>
-        <td>Power (3 to the power of 2)</td>
+        <td>الأس (3 أس 2)</td>
     </tr>
 </table>
 
-Python also has other types of operators. *Comparison* (relational) 
-operators are used to compare values.
-Try out what they do!
-(You can try them by using `print()` in your code,
-or you can try `python`'s command line.)
+يحتوي Python أيضًا على أنواع أخرى من المشغلات (operators). تُستخدم مشغلات *المقارنة* (العلاقية)(relational) لمقارنة القيم.
+جرب ما تفعله!
+(يمكنك تجربتها باستخدام `()print` في الكود الخاص بك ،
+أو يمكنك تجربة سطر أوامر `python`).
 
 <table class="table">
     <tr>
-        <th>Symbol</th>
-        <th>Example</th>
-        <th>Description</th>
+        <th>الرمز</th>
+        <th>مثال</th>
+        <th>وصف</th>
     </tr>
     <tr>
         <td><code>==</code>, <code>!=</code></td>
         <td><code>1 == 1</code>, <code>1 != 1</code></td>
-        <td>equal, not equal</td>
+        <td>يساوي ، لا يساوي</td>
     </tr>
     <tr>
         <td><code>&lt;</code>, <code>&gt;</code></td>
         <td><code>3 &lt; 5</code>, <code>3 &gt; 5</code></td>
-        <td>greater than, less than</td>
+        <td>أكبر من ، أقل من</td>
     </tr>
     <tr>
         <td><code>&lt;=</code>, <code>&gt;=</code></td>
         <td><code>3 &lt;= 5</code>, <code>3 &gt;= 5</code></td>
-        <td>Greater or equal, less or equal</td>
+        <td>أكبر أو يساوي ، أقل أو يساوي</td>
     </tr>
 </table>
 
-Comparison values are called **boolean** values
-(after [G. Boole](http://en.wikipedia.org/wiki/George_Boole)).
-They are used every time we want to know if something is `True` or `False`.
-Boolean types are exactly those two - `True` and `False`.
+تسمى قيم المقارنة **قيم منطقية (boolean)**
+(نسبة ل[جورج بول](http://en.wikipedia.org/wiki/George_Boole)).
+يتم استخدامها في كل مرة نريد فيها معرفة ما إذا كان شيء ما `صواب` أو `خاطئ`.
+الأنواع البولينية هي بالضبط هذان - `صواب` و `خاطئ`.
 
-Like all values, `True` and `False` can be assigned to variables:
+مثل جميع القيم ، يمكن تعيين `صواب` و `خاطئ` للمتغيرات:
 
 ```python
 true = 1 < 3  # we have to type it in lowercase now, because True is a reserved word in Python
@@ -78,20 +77,22 @@ print(false)
 ```
 
 > [note]
-> Note that to test equality, you have to use two equal signs: `3 == 3`.
-> One equal sign assigns a value to a variable, and two equal signs
-> compare two values (of variables).
+> لاحظ أنه لاختبار المساواة ، يجب عليك استخدام علامتي تساوي: `3 == 3`.
+> علامة تساوي واحدة تُعيِّن قيمة إلى متغير ، وعلامتا تساوي
+> قارن بين قيمتين (من المتغيرات).
 
-<code>True</code> and <code>False</code> 
-can be used directly in a program.
-Just keep an eye on capitalisation.
+يمكن استخدام <code>True</code> و <code>False</code>
+مباشرة في البرنامج.
+فقط انتبه إلى أن وضع الأحرف (capital).
 
 ```python
 print(True)
 print(False)
 ```
 
-## Conditions
+## الشروط (Conditions)
+
+
 
 {% if var('pyladies') -%}
 {% set rootname = 'pyladies' %}
@@ -99,7 +100,7 @@ print(False)
 {% set rootname = 'naucse-python' %}
 {%- endif %}
 
-Write the following into a new file (e.g. `if.py`):
+اكتب ما يلي في ملف جديد (مثل `if.py`):
 
 ```python
 side = float(input('Enter the side of a square in centimeters: '))
@@ -107,18 +108,17 @@ print("The perimeter of a square with a side of", side,"cm is ", side * 4,"cm.")
 print("The area of a square with a side of", side,"cm is", side * side, "cm2.")
 ```
 
-What happens when you enter a negative number? Does the output make sense?
+## ماذا يحدث عندما تدخل رقمًا سالبًا؟ هل النتيجة منطقية؟
 
-As we can see, the computer does exactly what it is told and doesn't
-think about context. You have to do that for it.
-It would be nice if the program could tell the user who enters
-a negative number that they entered nonsense.
-How do we do that?
+كما نرى ، يقوم الكمبيوتر بما هو مطلوب منه بالضبط ولا يفكر في السياق. عليك أن تفعل ذلك من أجله.
+سيكون من الجيد لو تمكن البرنامج من إخبار المستخدم الذي يدخل
+رقمًا سالبًا أنهم أدخلوا قيمة غير منطقية.
+كيف نفعل ذلك؟
 
-Let’s try to set a variable that will be `True` when a user enters a positive number.
+دعونا نحاول تعيين متغير (variable) يكون `صواب (True)` عندما يدخل المستخدم رقمًا موجبًا.
 
 {% filter solution %}
-    You can set the variable like this:
+    يمكنك تعيين المتغير variable على النحو التالي:
 
     ```python
     side = float(input('Enter the side of a square in centimeters: '))
@@ -126,8 +126,8 @@ Let’s try to set a variable that will be `True` when a user enters a positive 
     ```
 {% endfilter %}
 
-And then we will tell the program to use this variable. 
-For that purpose we will use the `if` and `else` statements.
+ثم سنخبر البرنامج باستخدام هذا المتغير variable.
+لهذا الغرض ، سنستخدم عبارات `if` و `else`.
 
 
 ```python
@@ -145,32 +145,32 @@ print("Thank you for using the geometric calculator.")
 
 ```
 
-So after `if`, there is a *condition* which is the
-expression we'll use for the decision making.
-After the condition you must write a colon (`:`).
-The colon is followed by the commands to be executed if the condition is `True`.
+إذن بعد `if` ، يوجد *شرط* وهو
+التعبير الذي سنستخدمه لاتخاذ القرار.
+بعد الشرط يجب أن تكتب نقطتين (:).
+يتم متابعة النقاط بواسطه الأوامر التي سيتم تنفيذها إذا كان الشرط `صواب True`.
 
-You need to indent the follow-up lines by **4** spaces each after every colon you use in Python.
+يجب أن تحتوي الأسطر اللاحقة على مسافة بادئة (indent) بـ **4** مسافات بعد كل نقطتين تستخدمها في Python.
 
-Then on the same level as `if`, write `else` followed by a `colon :`. The next lines
-contain the commands that are executed if the condition is `False`, and they must also be indented.<br>
+ثم على نفس مستوى `if` ، اكتب `else` متبوعًا بـ `colon :`. الأسطر التالية
+تحتوي على الأوامر التي يتم تنفيذها إذا كان الشرط `خاطئ False` ، ويجب أن تحتوي على مسافة (indent) أيضًا. <br>
 
-Then you then can write other code, which is not going to be indented and that will be executed every time, because
-the `if` statement `code block` has already ended.
+يمكنك بعد ذلك كتابة كود آخر ، و بدون مسافة بادئة (indent) وسيتم تنفيذه في كل مرة ، لأنه
+انتهى بالفعل `if` statement `code block`.
 
 > [note]
-> The indentation doesn't need to be 4 spaces, you could use 
-> 2 or even 11, or you can use the tabulator. The point is that
-> within one block of code, the indentation has to be the same.
-> So if you are working on some project with someone else, you
-> have to agree on indentation for the program 
-> to be able to run properly. Most of the people
-> from the Python community agree on 4 spaces.
+> لا يلزم أن تكون المسافة البادئة 4 مسافات ، يمكنك استخدام
+> 2 أو حتى 11 ، أو يمكنك استخدام علامة التبويب. النقطة هي أن
+> ضمن كتلة كود واحدة ، يجب أن تكون المسافة البادئة هي نفسها.
+> لذلك إذا كنت تعمل على مشروع ما مع شخص آخر ، فأنت
+> يجب أن تتفق على المسافة البادئة للبرنامج
+> لتتمكن من تشغيله بشكل صحيح. معظم الناس
+> من مجتمع Python يتفقون على 4 مسافات.
 
-## Other conditional statements
+## عبارات شرطية أخرى (Other conditional statements)
 
-Sometimes the `else` statement is not necessary.
-The following program does nothing extra if the number is not equal to zero.
+في بعض الأحيان لا تكون عبارة `else` ضرورية.
+لا يفعل البرنامج التالي أي شيء إضافي إذا لم يكن الرقم مساويًا للصفر.
 
 ```python
 number = int(input('Enter a number, to which I will add 3: '))
@@ -179,11 +179,11 @@ if number == 0:
 print(number, '+ 3 =', number + 3)
 ```
 
-Sometimes several conditions are needed. For this situation, we have the `elif` statement
-(combination of `else` and `if`). It's between `if` and `else`.
-You can repeat the `elif` keyword after the first `if`, but 
-only one branch will be executed, to be precise: the first one
-where the conditions are met (they are `true`).
+في بعض الأحيان تكون هناك حاجة إلى عدة شروط. لهذا الموقف ، لدينا عبارة `elif`
+(مزيج من `else` و `if`). إنه بين `if` و `else`.
+يمكنك تكرار كلمة `elif` بعد أول `if` ، ولكن
+سيتم تنفيذ فرع واحد فقط ، بالتحديد: الأول
+حيث تتحقق الشروط (إنها `صواب True`).
 
 
 ```python
@@ -202,9 +202,9 @@ else :
     print('Visitors from the future are not welcomed here!')
 ```
 
-## Winter clothing
+## ملابس الشتاء (Winter clothing)
 
-The following piece of code is a bit advanced and we won't fully discuss it right now. In order to work with it, you only need to understand that it will load the current temperature in the city of Vienna (written in German as Wien to not confuse with the city Vienna present in the USA) from the internet into a variable:
+القطعة التالية من التعليمات البرمجية متقدمة بعض الشيء ولن نناقشها بالكامل الآن. للعمل معها ، تحتاج فقط إلى فهم أنها ستقوم بتحميل درجة الحرارة الحالية في مدينة فيينا (الكتابة باللغة الألمانية Wien لعدم الخلط بينها وبين مدينة فيينا الموجودة في الولايات المتحدة الأمريكية) من الإنترنت إلى متغير variable:
 
 ```python
 from urllib.request import urlopen
@@ -212,7 +212,7 @@ url = "https://wttr.in/Wien?format=%t"
 temperature = int(urlopen(url).read().decode().strip("°C"))
 ```
 
-Write a program using `if`, `elif` and `else` which prints whether you will need no jacket, a light jacket or a winter coat depending on the current temperature:
+اكتب برنامجًا يستخدم `if` و `elif` و `else` والذي يطبع ما إذا كنت ستحتاج إلى سترة ، أو سترة خفيفة أو معطف شتوي اعتمادًا على درجة الحرارة الحالية:
 
 {% filter solution %}
 
@@ -231,9 +231,9 @@ Write a program using `if`, `elif` and `else` which prints whether you will need
 {% endfilter %}
 
 
-## Rock paper scissors
+## حجر ورقة مقص (Rock paper scissors)
 
-`If`s can be nested - after an `if` and its indentation, there can be other `if`.
+يمكن ادراج (nesting) عبارات `if` - بعد عبارة `if` ومسافاتها البادئة (indentation) ، يمكن أن تكون هناك عبارات `if` أخرى.
 
 
 ```python
@@ -266,6 +266,5 @@ else:
 
 ```
 
-Yay, your first game! **Congratulations!!!**<br>
-Now we need to overwrite the pc_choice so it will act
-randomly. We will talk about how to do this next time.
+**تهانينا!!!** <br>
+الآن نريد ان نجعل اختيار الكمبيوتر يعمل بشكل عشوائي. نحتاج إلى تغيير قيمة `pc_choice`. سنناقش كيفية القيام بذلك في المرة القادمة.

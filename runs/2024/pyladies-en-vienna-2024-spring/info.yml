@@ -88,19 +88,19 @@ plan:
     - lesson: beginners-en/lesson-2-homework
       type: homework
 
-# - title: Conditions, modules and functions
-#   slug: loops
-#   date: 2024-04-02
-#   materials:
-#   - lesson: beginners-en/comparisons
-#   - lesson: beginners-en/and-or
-#   - lesson: beginners-en/functions
-#   - title: Basics cheatsheet
-#     url: https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc.pdf
-#     type: cheatsheet
-#   - title: Homework
-#     url: https://docs.google.com/document/d/1HsKbAt6DAH8uQYJUR8UB8sOFvzgUUr_WeZwB6cb9lcA
-#     type: homework
+  - title: الشروط (Conditions)، الدوال (functions) و المكتبات (modules)
+    slug: loops
+    date: 2025-01-05
+    materials:
+    - lesson: beginners-en/comparisons
+    - lesson: beginners-en/and-or
+    - lesson: beginners-en/functions
+    - title: Basics cheatsheet
+      url: https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc.pdf
+      type: cheatsheet
+    - title: Homework
+      url: https://docs.google.com/document/d/1cTDxe2Wy1zrS_mXwxheUT4iOZo26-8Y2VqiBLSYOiYQ
+      type: homework
 
 # - title: Loops, for and while
 #   date: 2024-04-09

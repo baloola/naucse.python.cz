@@ -1,32 +1,31 @@
 
 # *Or* & *and*
 
-In addition to the operators that we saw in the Comparison lesson, we will now add 3 more logical (Boolean) operators to the table:
+بالإضافة إلى المشغلين (operators) الذين رأيناهم في درس المقارنة ، سنضيف الآن 3 مشغلات منطقية (بوليانية) (boolean) أخرى إلى الجدول:
 
 <table class="table">
     <tr>
-        <th>Symbol</th>
-        <th>Example</th>
-        <th>Description</th>
+        <th>الرمز</th>
+        <th>مثال</th>
+        <th>وصف</th>
     </tr>
     <tr>
         <td><code>and</code></td>
         <td><code>x and y</code></td>
-        <td>True if both operands are true</td>
+        <td>صحيح إذا كان كلا العاملين صحيحًا</td>
     </tr>
     <tr>
         <td><code>or</code></td>
         <td><code>x or y</code></td>
-        <td>True if either operand is true</td>
+        <td>صحيح إذا كان أحد العاملين صحيحًا</td>
     </tr>
     <tr>
         <td><code>not</code></td>
         <td><code>not x</code></td>
-        <td>True if the operand is false<br> 
-        (it negates the operand)</td>
+        <td>صحيح إذا كان العاملان خاطئًا<br>
+        (إنه ينفي العامل)</td>
     </tr>
 </table>
-
 
 
 ```python
@@ -66,8 +65,8 @@ else:
 ```
 
 > [note]
-> What happens if you answer something other than "Yes" or "No"?
+> ماذا يحدث إذا أجبت بشيء آخر غير "نعم" أو "لا"؟
 >
-> The variables `happy` and `rich` won't be set, and later when they are needed, the program will end with an error.
+> لن يتم تعيين المتغيرين `happy` و `rich` ، وفي وقت لاحق عندما تكون هناك حاجة إليهما ، سينتهي البرنامج بـ خطأ.
 >
-> We will learn how to handle errors [next time]({{ lesson_url('beginners-en/exceptions') }}).
+> سنتعلم كيفية التعامل مع الأخطاء [في المرة القادمة]({{ lesson_url('beginners-en/exceptions') }}).
