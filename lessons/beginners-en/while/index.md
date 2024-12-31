@@ -1,8 +1,7 @@
 # While
 
-In addition to the `for` loop, we have a second type of loop, namely, the `while` loop.
-Unlike `for`, where we *know the number of repetitions* in advance, `while` is used when the 
-loop depends on some condition. The loop body is repeated until the condition is met.
+بالإضافة إلى حلقة `for` ، لدينا نوع ثانٍ من الحلقات ، وهو حلقة `while`.
+على عكس `for` ، حيث *نعرف عدد التكرارات* مسبقًا ، يتم استخدام `while` عندما يعتمد ذلك على بعض الشروط. يتم تكرار جسم (ما بداخل) الحلقة حتى يتم استيفاء الشرط.
 
 ```python
 response = input('Say aaa!')
@@ -11,8 +10,8 @@ while response != 'aaa':
 	response = input('Say aaa!')
 ```
 
-But pay attention! It is very easy to write a loop with a condition that is always true.
-This kind of loop will be repeated forever.
+ولكن انتبه! من السهل جدًا كتابة حلقة بشرط صحيح دائمًا.
+سيؤدي هذا النوع من الحلقات إلى التكرار إلى الأبد.
 
 ```python
 from random import randrange
@@ -22,15 +21,16 @@ while True:
     print('(Wait for the computer to get tired…)')
 ```
 
-The program can be interrupted with
+ولكن انتبه! من السهل جدًا كتابة حلقة بشرط صحيح دائمًا.
+سيؤدي هذا النوع من الحلقات إلى التكرار إلى الأبد.**يمكن مقاطعة البرنامج باستخدام**
 <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
 > [note]
-> This shortcut will raise an error
-> and the program will end - like after every error.
+> سيؤدي هذا الاختصار إلى إثارة خطأ
+> وسينتهي البرنامج - مثل بعد كل خطأ.
 
-Finally, we have the `break` command, that will signal the process to ‘jump out’ of the loop,
-and commands after the loop will be performed immediately.
+أخيرًا ، لدينا الأمر `break` ، والذي سيُرسل إشارة إلى العملية "للخروج" من الحلقة ،
+وسيتم تنفيذ الأوامر بعد الحلقة على الفور.
 
 
 ```python
@@ -45,8 +45,8 @@ while True:
 print('Yay and it did not even hurt')
 ```
 
-The break command can only be used inside a loop (`while` or `for`), 
-and if we have nested loops, it will only jump out of the one where it is used. 
+الأمر `break` يمكن استخدامه فقط داخل حلقة (`while` أو `for`) ،
+وإذا كان لدينا حلقات متداخلة ، فسوف يخرج فقط من الحلقة التي تم استخدامها فيها.
 
 ```python
 for i in range(10):  # Outer loop
@@ -56,22 +56,20 @@ for i in range(10):  # Outer loop
             break
     print()
 ```
-`Break` will jump out of the inner loop and back to the outer loop 
-when <var>i</var> is less or equal than <var>j</var>.
+`سيؤدي الأمر `break` إلى الخروج من الحلقة الداخلية والعودة إلى الحلقة الخارجية عندما يكون <var>i</var> أصغر من أو يساوي <var>j</var>.
 
-Back to `while`!
-Can you write the following program?
+لنعد للحديث عن `while` مجددا!
+
+هل يمكنك كتابة البرنامج التالي؟
 
 ## 21
 
-* You start with 0 points
-* In each round, the computer shows how many points you have, and asks if you want to continue
-* If you answer ‘No’, the game ends.
-* If you answer ‘Yes’, the computer ‘turns a card’ (randomly selects a number from 2 to 10)
- and adds its value to the current points.
-* If you go over 21, you lose
-* The aim of the game is to get as many points as possible, but you win only if you get 21.
-
+* تبدأ برصيد 0 نقطة
+* في كل جولة ، يعرض الكمبيوتر عدد النقاط التي لديك ، ويسأل عما إذا كنت تريد المتابعة
+* إذا أجبت "لا" ، تنتهي اللعبة.
+* إذا أجبت "نعم" ، فإن الكمبيوتر "يقلب بطاقة" (يختار رقمًا عشوائيًا من 2 إلى 10) ويضيف قيمته إلى النقاط الحالية.
+* إذا تجاوزت 21 ، تخسر
+* الهدف من اللعبة هو الحصول على أكبر عدد ممكن من النقاط ، لكنك تفوز فقط إذا حصلت على 21.
 
 {% filter solution %}
 ```python

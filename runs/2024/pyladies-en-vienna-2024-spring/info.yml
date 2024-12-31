@@ -99,21 +99,21 @@ plan:
       url: https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc.pdf
       type: cheatsheet
     - title: Homework
-      url: https://docs.google.com/document/d/1cTDxe2Wy1zrS_mXwxheUT4iOZo26-8Y2VqiBLSYOiYQ
+      url: https://docs.google.com/document/d/1ZX-fsMmQzQBvgHDRM9EuRk4TaetT5kP2fWXV5HuaXZ4
       type: homework
 
-# - title: Loops, for and while
-#   date: 2024-04-09
-#   slug: strings
-#   materials:
-#   - lesson: beginners-en/colabturtle
-#   - lesson: beginners-en/while
-#   - title: If/While cheatsheet
-#     url: https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_if_while.pdf
-#     type: cheatsheet
-#   - title: Homework
-#     url: https://docs.google.com/document/d/1FO4J7l2oKN_vdrXVgvbrKOpJEx1Vu3f6gLnZe-tKIM4/edit
-#     type: homework
+  - title: الحلقات (Loops) , (for و while)
+    date: 2025-01-12
+    slug: strings
+    materials:
+    - lesson: beginners-en/colabturtle
+    - lesson: beginners-en/while
+    - title: If/While cheatsheet
+      url: https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_if_while.pdf
+      type: cheatsheet
+    - title: Homework
+      url: https://docs.google.com/document/d/1lsA28-Np3AyLuR6U-prwGijm5b3vwGWczjCuD0EVDQM/edit
+      type: homework
 
 # - title: Strings, Custom functions
 #   date: 2024-04-16

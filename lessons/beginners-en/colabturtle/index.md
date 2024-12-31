@@ -1,55 +1,57 @@
 
 # 🐍 🐢
 
-In this lesson, we will be drawing with the [ColabTurtle](https://github.com/tolgaatam/ColabTurtle) module a lot.
+في هذا الدرس ، سنرسم كثيرًا باستخدام مكتبة [ColabTurtle](https://github.com/tolgaatam/ColabTurtle).
 
 > [note]
-> In the older versions of the materials, we have used the turtle module
-> which is available in for every Python installation
-> but more and more Mac users started to have unfixable issues with it
-> so we have decided to switch to ColabTurtle that we also use for the homework
-> for this lesson.
+> في الإصدارات الأقدم من المواد ، لقد استخدمنا مكتبة turtle
+> وهي متوفرة في كل تثبيت لبايثون
+> ولكن بدأ المزيد والمزيد من مستخدمي Mac في مواجهة مشكلات غير قابلة للإصلاح معها
+> لذلك قررنا التبديل إلى ColabTurtle الذي نستخدمه أيضًا للواجبات المنزلية
+> لهذا الدرس.
 
-Start the Google Colab with a newly created notebook and install and initialize the ColabTurtle in a following way.
+ابدأ تشغيل Google Colab باستخدام دفتر ملاحظات تم إنشاؤه حديثًا وقم بتثبيت وتشغيل ColabTurtle بالطريقة التالية.
 
-First run this line in a first cell:
+أولاً ، قم بتشغيل هذا السطر في الخلية الأولى:
 
 ```console
 !pip3 install ColabTurtle
 ```
 
-This will install the ColabTurtle module inside your colab environment for this lesson.
-You need to do it once in every colab notebook, where you want to use it. You also need to run this cell if you close and open this colab notebook again.
+سيؤدي هذا إلى تثبيت مكتبة ColabTurtle داخل بيئة colab الخاصة بك لهذا الدرس.
+تحتاج إلى القيام بذلك مرة واحدة في كل دفتر ملاحظات colab ، حيث تريد استخدامه. تحتاج أيضًا إلى تشغيل هذه الخلية إذا قمت بإغلاق دفتر ملاحظات colab هذا وفتحه مرة أخرى.
 
-When this is done, you can import all functions from ColabTurtle module using this:
+عندما يتم ذلك ، يمكنك استيراد جميع الدالات من وحدة ColabTurtle باستخدام هذا:
+
 
 ```python
 from ColabTurtle.Turtle import initializeTurtle, forward
 ```
 
-Don't worry, we will talk about the possible ColabTurtle functions throughout the lesson.
+لا تقلق ، سنناقش دوال ColabTurtle المحتملة طوال الدرس.
 
-Before you start using any turtle commands in a new cell, you need to initialize it by typing this:
+قبل البدء في استخدام أي أوامر السلحفاة في خلية جديدة ، تحتاج إلى تهيئتها عن طريق كتابة هذا:
 
 ```python
 initializeTurtle()
 ```
 
-Initialization means that a fresh canvas window is created below the current cell, turtle image is rotated with a head north and you can start drawing!
+التهيئة تعني أنه يتم إنشاء نافذة  جديدة أسفل الخلية الحالية ، ويتم تدوير صورة السلحفاة مع رأسها شمالًا ويمكنك البدء في الرسم!
 
-Try moving the turtle forward by 50 units (screen pixels) by running following in a new cell:
+جرب تحريك السلحفاة للأمام بمقدار 50 وحدة (بكسل الشاشة) عن طريق تشغيل ما يلي في خلية جديدة:
+
 
 ```python
 forward(50)
 ```
 
-You can see that a new canvas is drawn below the current cell and the turtle is leaving a drawn line behind itself with length 50.
+يمكنك أن ترى أنه تم رسم نافذة (canvas) جديد أسفل الخلية الحالية وأن السلحفاة تترك خطًا مرسومًا خلفها بطول 50.
 
-## Rotation
+## الدوران (Rotation)
 
-In order to clear the canvas for next drawing, you need to call the `initializeTurtle()` again.
+من أجل مسح نافذة (canvas) الرسم للرسم التالي ، تحتاج إلى استدعاء `initializeTurtle()` مرة أخرى.
 
-The turtle can rotate and crawl across the "paper".
+يمكن للسلحفاة الدوران والزحف عبر "الورقة".
 
 ```python
 from ColabTurtle.Turtle import forward, left, right, initializeTurtle
@@ -61,18 +63,19 @@ forward(50)
 right(60)
 forward(50)
 ```
+## تكرار (Repetition)
 
-This is already really powerful way how to draw a lot of beautiful pictures.
+هذه بالفعل طريقة قوية للغاية لرسم العديد من الصور الجميلة.
 
-For the further steps you can freely consult the ColabTurtle API description (what each available function does and what parameters does each function have) on [https://github.com/tolgaatam/ColabTurtle#api](https://github.com/tolgaatam/ColabTurtle?tab=readme-ov-file#api).
+لمزيد من الخطوات ، يمكنك الرجوع بحرية إلى وصف واجهة برمجة تطبيقات ColabTurtle (ما تفعله كل وظيفة متاحة وما هي المعلمات التي تحتوي عليها كل دالة) على [https://github.com/tolgaatam/ColabTurtle#api](https://github.com/tolgaatam/ColabTurtle?tab=readme-ov-file#api).
 
-### Square
+### مربع (Square)
 
-Draw a square.
+ارسم مربعًا.
 
 ![Turtle square](static/turtle-square.png)
 
-A square has four equal straight sides and four 90° angles.
+المربع له أربعة جوانب مستقيمة متساوية وأربع زوايا قائمة 90 درجة.
 
 {% filter solution %}
 ```python
@@ -89,11 +92,11 @@ left(90)
 ```
 {% endfilter %}
 
-### Rectangle
+### مستطيل (Rectangle)
 
-Draw a rectangle.
+ارسم مستطيلًا.
 
-Try to make it so that the turtle will "look" to the top in the end (like it was in the beginning).
+حاول أن تجعل السلحفاة "تنظر" إلى الأعلى في النهاية (كما كانت في البداية).
 
 ![Turtle rectangle](static/turtle-rect.png)
 
@@ -113,9 +116,9 @@ left(90)
 ```
 {% endfilter %}
 
-### Three squares
+### ثلاثة مربعات (Three squares)
 
-Now draw three squares, each rotated by 20° from the previous one!.
+الآن ارسم ثلاثة مربعات ، كل منها يدور بزاوية 20 درجة عن المربع السابق\!
 
 ![Three turtle squares](static/turtle-squares.png)
 
@@ -158,16 +161,15 @@ left(90)
 ```
 {% endfilter %}
 
-### Can we write it better?
+### هل يمكننا تحسين ذلك؟ (Can we write it better?)
 
-So much code! There has to be a way how to simplify it.
+هناك الكثير من الكود! يجب أن يكون هناك طريقة لتبسيطه.
 
-There is.
-Now we will learn the command `for`.
+الآن سوف نتعلم الأمر `for`.
 
-## Repetition
+## التكرار (Repetition)
 
-What does the following code do?
+ماذا يفعل الكود التالي؟
 
 ```python
 for number in range(5):
@@ -177,29 +179,29 @@ for greeting in 'Ahoj', 'Hello', 'Hola', 'Hei', 'Hallo':
     print(greeting + '!')
 ```
 
-What does the command `for` do?
+ماذا يفعل الأمر `for`؟
 
 {% filter solution %}
-The command `for` repeats part of a program.
-It repeats commands that are indented after `for`.
-It's the same as with `if` - it applies only to
-commands that are indented below.
+يقوم الأمر `for` بتكرار جزء من البرنامج.
+إنه يكرر الأوامر التي يتم جمعها (باستعمال مسافات البداية indnent ) بعد `for`.
+إنه مشابه لـ `if` - فهو ينطبق فقط على
+الأوامر التي يتم جمعها أدناه.
 
-The command `for x in range(n):` repeats the commands below <var>n</var> times
-and it increments the variable `x` gradually from <var>0 to n-1</var>.
+يقوم الأمر `for x in range(n):` بتكرار الأوامر أدناه <var>n</var> مرات
+يزيد تدريجياً من قيمة المتغير `x` من <var>0 إلى n-1</var>.
 
-The command `for x in a, b, c, d, ...:` repeats the commands below;
-it changes the variable `x` gradually to <var>a</var>, <var>b</var>,
-<var>c</var> <var>d</var>, ...
+يقوم الأمر `for x in a, b, c, d, ...:` بتكرار الأوامر أدناه ؛
+يغير المتغير `x` تدريجياً إلى <var>a</var> ، <var>b</var> ،
+<var>c</var> <var>d</var> ، ...
 
-In computer programming, a loop is a sequence of instructions that is continually repeated until a condition is reached.
-Very powerful concept allowing you to significantly reduce duplication of commands.
+في برمجة الكمبيوتر ، الحلقة (loop) هي تسلسل من التعليمات التي يتم تكرارها باستمرار حتى يتم الوصول إلى شرط معين.
+مفهوم قوي جدًا يسمح لك بتقليل تكرار الأوامر بشكل كبير.
 
 {% endfilter %}
 
-### Overwriting variables
+### إعادة كتابة المتغيرات (Overwriting variables)
 
-What does the following program do?
+ماذا يفعل البرنامج التالي؟
 
 ```python
 sum = 0
@@ -215,23 +217,23 @@ print('loop ended, sum is', sum)
 ```
 
 {% filter solution %}
-The command `sum = sum + number` calculates the value of
-`sum + number`, adds the current number to the sum,
-and stores the result in the variable `sum`.
-The new value of `sum` will be used in the next loop.
+يقوم الأمر `sum = sum + number` بحساب قيمة
+`sum + number` ، ويضيف الرقم الحالي إلى المجموع ،
+ويخزن النتيجة في المتغير `sum`.
+سيتم استخدام القيمة الجديدة لـ `sum` في الحلقة التالية.
 
-In the beginning the sum is 0, and in the end the sum of
-our numbers will be printed.
+في البداية يكون المجموع 0 ، وفي النهاية سيتم طباعة مجموع
+أرقامنا.
 {% endfilter %}
 
-### Square
+### مربع (Square)
 
-Back to drawing! This time we will use loops.
+عودة إلى الرسم! هذه المرة سنستخدم الحلقات (loops).
 
-Draw a square.
+ارسم مربعًا.
 
-Use `forward` only twice, once in the import
-and once as function.
+استخدم `forward` مرتين فقط ، مرة واحدة في الاستيراد
+ومرة ​​واحدة كدالة.
 
 ![Turtle square](static/turtle-square.png)
 
@@ -246,12 +248,12 @@ for i in range(4):
 ```
 {% endfilter %}
 
-### Discontinuous line
+### خط متقطع (Discontinuous line)
 
-The functions `penup` and `pendown` from the `ColabTurtle`
-module tell the turtle to stop/start drawing.
+الدالتان `penup` و `pendown` من مكتبة `ColabTurtle`
+تخبر السلحفاة بالتوقف / البدء في الرسم.
 
-Try to draw a discontinuous line.
+حاول رسم خط متقطع.
 
 ![Turtle and discontinuous line](static/turtle-dashed.png)
 
@@ -268,15 +270,15 @@ for i in range(10):
 ```
 {% endfilter %}
 
-Now try to make it so that the lines that are drawn become
-gradually bigger.
+الآن حاول أن تجعل الخطوط التي يتم رسمها تصبح أكبر تدريجيًا.
 
-![Turtle and discontinuous line]](static/turtle-dashed2.png)
+![Turtle and discontinuous line](static/turtle-dashed2.png)
 
-> [note] Help
+> [note] مساعدة
 >
-> What exactly does the command `for` do?
-> Can we use the variable that it sets up?
+> ماذا يفعل الأمر `for` بالضبط؟
+> هل يمكننا استخدام المتغير الذي يصنعه؟
+
 
 {% filter solution %}
 ```python
@@ -293,20 +295,20 @@ for i in range(20):
 ```
 {% endfilter %}
 
->[note] Loop variable Naming
->Always use a meaningful loop variable name, like **for index_tab_browser in range(3, 18): close_tab_in_browser(index_tab_browser) ** not just i, j, x, y etc.
->When using meaningful names:
-> - the code is more understandable to colleagues reading your code,
-> - it's easier to find errors in the loop logic
-> - text searches for the variable name return relevant pieces of code operating on the same data are more reliable
+>[note] تسمية متغير الحلقة (Loop variable Naming)
+> استخدم دائمًا اسم متغير حلقة معنيًا ، مثل **for index_tab_browser in range(3, 18): close_tab_in_browser(index_tab_browser) ** وليس فقط i ، j ، x ، y وما إلى ذلك.
+> عند استخدام أسماء ذات معنى:
+> - يكون الكود أكثر قابلية للفهم من قبل الزملاء الذين يقرأون كودك ،
+> - من الأسهل العثور على أخطاء في منطق الحلقة
+> - عمليات البحث النصي عن اسم المتغير تعيد أجزاءًا ذات صلة من التعليمات البرمجية التي تعمل على نفس البيانات بشكل أكثر موثوقية
 >
-> There is one exception - when it's a single-level loop and the variable has no meaning other than "the number of times I've been through this loop", in which case `i` is usually be used.
+> هناك استثناء واحد - عندما تكون هذه حلقة أحادية المستوى ولا معنى للمتغير بخلاف "عدد المرات التي مررت بها خلال هذه الحلقة" ، وفي هذه الحالة يتم استخدام `i` عادةً.
 
-### Three squares
+### ثلاثة مربعات (Three squares)
 
-Finally, draw three squares, each rotated by 20°.
-Now you know how to write it in a simple way: repeat the code
-by using `for`, do not copy the same code three times.
+أخيرًا ، ارسم ثلاثة مربعات ، كل منها يدور بزاوية 20 درجة.
+الآن أنت تعرف كيفية كتابتها بطريقة بسيطة: كرر الكود
+باستخدام `for` ، لا تكرر نفس الكود ثلاث مرات.
 
 ![Three turtle squares](static/turtle-squares.png)
 
@@ -323,12 +325,12 @@ for i in range(3):
 {% endfilter %}
 
 
-## Extra tasks
+## المهام الإضافية (Extra tasks)
 
-When you are done, try to draw stairs:
+عندما تنتهي ، حاول رسم السلالم:
 
 ![Turtle stairs](static/turtle-stairs.png)
 
-When you are also done with the stairs, try to draw 7 hexagons:
+عندما تنتهي أيضًا من السلالم ، حاول رسم 7 سداسيات:
 
 ![Turtle hexagons](static/turtle-hexagons.png)
