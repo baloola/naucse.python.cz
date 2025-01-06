@@ -19,7 +19,7 @@
 بعد ذلك يمكنك تشغيل  المُثبِّت (installer) .
 
 
-> [warning]  في البداية، تأكد من تحديد**Install launcher for all Users** وأيضًا مهم جدًا: **Add Python 3.12 to PATH**.
+> [warning]  في البداية، تأكد من تحديد**Install launcher for all Users** وأيضًا مهم جدًا: **Add Python 3.13.1 to PATH**.
 
 
 (إذا لم تكن Admin، فلا تحدد *Install launcher for all Users*.)
