@@ -190,11 +190,11 @@ print(number, '+ 3 =', number + 3)
 age = int(input('How old are you? '))
 if age >= 150:
     print('And from which planet are you?')
-elif age >= 18:
+elif age >= 10:
     # This branch will not be executed for "200", for example.
-    print('We can offer: wine, cider, or vodka.')
+    print('We can offer: Cofee, Tea, or sharboot.')
 elif age >= 1:
-    print('We can offer: milk, tea, or water')
+    print('We can offer: Milk, Ovaltine, or water')
 elif age >= 0:
     print('Unfortunately, we are out of baby formula.')
 else :
