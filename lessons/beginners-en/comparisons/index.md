@@ -175,8 +175,8 @@ print("Thank you for using the geometric calculator.")
 
 ```python
 number = int(input('Enter a number, to which I will add 3: '))
-if number == 0:
-    print('This is easy!')
+if number < 0:
+    print('Negative number detected!')
 print(number, '+ 3 =', number + 3)
 ```
 
