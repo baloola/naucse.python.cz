@@ -90,7 +90,7 @@ plan:
 
   - title: الشروط (Conditions)، الدوال (functions) و المكتبات (modules)
     slug: loops
-    date: 2025-01-05
+    date: 2025-01-12
     materials:
     - lesson: beginners-en/comparisons
     - lesson: beginners-en/and-or
